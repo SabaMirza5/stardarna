@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+    font-family: "trenda";
+    src: url(../build/assets/fonts/trenda-regular.otf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: "trenda";
+    src: url(../build/assets/fonts/trenda-semibold.otf);
+    font-weight: 600;
+}
+@font-face{
+    font-family: "trenda";
+    src: url(../build/assets/fonts/trenda-black.otf);
+    font-weight: 700;
+}
+@font-face{
+    font-family: "Sofia Pro";
+    src: url(../build/assets/fonts/sofia-semibold.otf);
+    font-weight: 600;
+}
+@font-face{
+    font-family: "Sofia Pro";
+    src: url(../build/assets/fonts/sofia-regular.otf);
+    font-weight: 400;
+}
+@font-face{
+    font-family: "Sofia Pro";
+    src: url(../build/assets/fonts/sofiapro-medium.otf);
+    font-weight: 500;
+}
+@font-face{
+    font-family: "Sofia Pro";
+    src: url(../build/assets/fonts/sofia_light.otf);
+    font-weight: 300;
+}
+
+.trenda_semibold{
+    font-family: "trenda";
+    font-weight: 600;
+}
+.trenda_regular{
+    font-family: "trenda";
+    font-weight: 400;
+}
+.trenda_bold{
+    font-family: "trenda";
+    font-weight: 700;
+}
+.sofia_semibold{
+    font-family: "Sofia Pro";
+    font-weight: 600;
+}
+.sofia_regular{
+    font-family: "Sofia Pro";
+    font-weight: 400;
+}
+.sofia_medium{
+    font-family: "Sofia Pro";
+    font-weight: 500;
+}
+.sofia_light{
+    font-family: "Sofia Pro";
+    font-weight: 300;
+}
+.shadow-circle {
+    box-shadow: 0 30px 30px rgba(37, 163, 215, 0.1); 
+  }
+
+
+
+
+  

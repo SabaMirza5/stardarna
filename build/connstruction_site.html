@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section class="bg-[#F0F5F7]">
+      <nav class="xl:px-[100px] md:px-[5%] px-[3%] 2xl:py-11 py-5">
+        <div class="max-w-full">
+          <div class="flex justify-between items-center">
+            <!-- Logo and Navigation -->
+            <div class="flex items-center 2xl:gap-[100px] lg:gap-10">
+              <!-- Logo -->
+              <div class="flex">
+                <a href="./index.html">
+                  <img
+                    src="./assets/img/logo.png"
+                    alt="Company Logo"
+                    class="w-full h-full"
+                  />
+                </a>
+              </div>
+              <!-- Navigation Links -->
+              <div class="hidden lg:block">
+                <ul class="flex 2xl:space-x-[50px] space-x-8 items-center">
+                  <li class="relative group">
+                    <a
+                      href="./floor_clear.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >Services</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="./Home_town.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >Offices</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="./our_prices.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >Faq</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="./about_us.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >About us</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Buttons and Social Icons -->
+            <div class="hidden lg:flex items-center space-x-4">
+              <a href="./contect.html"
+                class="bg-[#15238C] text-white px-6 py-2 lg:py-3 primaryfont rounded-full hover:bg-[#394288] flex items-center space-x-2"
+              >
+                <img
+                  src="./assets/img/navicon.png"
+                  alt="Icon"
+                  class="h-4 lg:h-5 w-4 lg:w-5"
+                />
+                <span class="text-lg trenda_bold">Inspiration</span>
+              </a>
+<a href="./salery_benifits.html">
+              <img
+                src="../build/assets/img/Search.png"
+                alt=""
+                class="cursor-pointer"
+              />
+            </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+              <button
+                id="mobile-menu-button"
+                class="text-black focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden" id="mobile-menu">
+          <ul class="space-y-4 px-4 pt-4 pb-3 text-center">
+            <li>
+              <a
+              href="./floor_clear.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+              href="./Home_town.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >Offices</a
+              >
+            </li>
+            <li>
+              <a
+              href="./our_prices.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >Faq</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about_us.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >About us</a
+              >
+            </li>
+          </ul>
+          <div class="flex items-center md:gap-10 gap-5 justify-center">
+            <a href="./contect.html"
+              class="bg-[#15238C] text-white px-6 py-2 lg:py-3 rounded-full hover:bg-[#394288] flex items-center space-x-2"
+            >
+              <img
+                src="./assets/img/navicon.png"
+                alt="Icon"
+                class="h-4 lg:h-5 w-4 lg:w-5"
+              />
+              <span class="text-lg trenda_bold">Inspiration</span>
+            </a>
+
+            <a href="./salery_benifits.html">
+              <img
+                src="../build/assets/img/Search.png"
+                alt=""
+                class="cursor-pointer"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- ====================HEADER SECTION START HER================= -->
+
+    <section class="bg-[#F0F5F7]">
+      <div
+        class="2xl:px-[100px] px-[5%] 2xl:pt-[100px] pt-[5%] flex justify-center"
+      >
+        <div class="text-center md:w-[76%] w-full">
+          <h1
+            class="2xl:text-[86px] xl:text-7xl md:text-5xl text-4xl 2xl:leading-[106px] leading-10 text-[#060924] trenda_regular"
+          >
+            Construction site
+          </h1>
+          <p
+            class="text-[#7D8C95] xl:text-[20px] text-base sofia_regular 2xl:leading-10 leading-7 md:pt-5 pt-3"
+          >
+            Construction cleaning is an important part of the construction
+            process. We offer professional construction cleaning to ensure your
+            construction project is sparkling clean from start to finish. Of
+            course with a collective agreement, liability insurance and ID06!
+          </p>
+        </div>
+      </div>
+      <div class="bg-[#F0F5F7] md:pt-[50px] pt-7">
+        <div class="">
+          <img
+            src="./assets/img/construction1.png"
+            alt=""
+            class="w-full h-full"
+          />
+        </div>
+      </div>
+      <div class="2xl:px-[100px] px-[5%] 2xl:py-[200px] py-[5%]">
+        <div
+          class="flex justify-center items-center 2xl:gap-[100px] xl:gap-[50px] md:gap-9 gap-5 md:flex-row flex-col-reverse"
+        >
+          <div class="md:w-1/2 w-full">
+            <img
+              src="./assets/img/construction2.png"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div class="md:w-1/2 w-full">
+            <h1
+              class="2xl:text-[86px] xl:text-5xl md:text-4xl text-3xl 2xl:leading-[106px] leading-10 text-[#060924] trenda_regular"
+            >
+              Dear customer!
+            </h1>
+            <p
+              class="text-[#7D8C95] 2xl:text-[30px]  lg:text-xl text-lg sofia_regular 2xl:leading-10 leading-7 lg:pt-5 pt-3"
+            >
+              The cleaners are now part of Hemfrid.
+            </p>
+            <p
+              class="text-[#7D8C95] 2xl:text-[30px]  lg:text-xl text-sm sofia_regular 2xl:leading-10 leading-7 lg:pt-5 pt-3"
+            >
+              Contact <a href="" class="text-[#15238C]">info@hemfrid.se</a
+              > or <span class="text-[#15238C]">010 555 85 00</span> to book
+              this service.
+            </p>
+            <p
+              class="text-[#7D8C95] 2xl:text-[30px]  lg:text-xl text-sm sofia_regular 2xl:leading-[60px] leading-7 lg:pt-7 pt-3"
+            >
+              Contact us and we'll set up a meeting and go over how we can help!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====================HEADER SECTION START HER================= -->
+
+
+
+
+
+    <!-- ===============Cleaning after new construction and renovation SECTION START HER============== -->
+    <section
+      class="2xl:px-[100px] px-[5%] 2xl:py-[130px] py-[5%] flex justify-center bg-[#FAFAFA] 2xl:gap-[147px] xl:gap-[100px] gap-8 xl:flex-row flex-col items-center"
+    >
+      <div class="2xl:w-[50%] xl:w-[66%] w-full">
+        <div class="">
+          <h1
+            class="2xl:text-[66px] xl:text-5xl md:text-4xl text-3xl 2xl:leading-[82px] leading-7 text-[#060924] trenda_regular"
+          >
+            Cleaning after new construction and renovation
+          </h1>
+          <p
+            class="text-[#7D8C95] 2xl:text-[20px] text-base sofia_regular 2xl:leading-10 leading-7 md:pt-2 pt-1"
+          >
+            Regardless of whether you are a private person who wants help with a
+            rough cleaning after renovation or a large company that has built a
+            new building, our cleaning teams have extensive experience in
+            construction cleaning! We currently help a number of large and small
+            construction companies as well as private individuals all over the
+            country.
+          </p>
+        </div>
+        <div class="lg:pt-12 pt-5">
+          <h1 class="trenda_semibold text-[32px] text-[#060924]">
+            Complete solution
+          </h1>
+          <p
+            class="text-[#7D8C95] 2xl:text-[20px] text-base sofia_regular 2xl:leading-10 leading-7 md:pt-2 pt-1"
+          >
+            Larger construction projects often involve a lot of cleaning. It
+            should be easy to hire a cleaning contractor and of course we help
+            with more than just construction cleaning, for example: 
+          </p>
+        </div>
+        <div
+          class="grid 2xl:grid-cols-3 xl:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-[10px] pt-[30px]"
+        >
+          <button
+            class="sofia_regular text-lg text-[#7D8C95] p-4 bg-[#F0F5F7] rounded-[90px]"
+          >
+            Rough cleaning
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#7D8C95] 2xl:p-2 py-4 px-2 bg-[#F0F5F7] rounded-[90px]"
+          >
+            Ongoing maintenance cleaning
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#7D8C95] p-4 bg-[#F0F5F7] rounded-[90px]"
+          >
+            Display cleaning
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#7D8C95] p-4 bg-[#F0F5F7] rounded-[90px]"
+          >
+            Final cleaning
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#7D8C95] p-4 bg-[#F0F5F7] rounded-[90px]"
+          >
+            Move-in cleaning
+          </button>
+        </div>
+      </div>
+      <div class="2xl:w-[50%] xl:w-[44%] w-full gap-5 flex items-baseline justify-center">
+        <div class="">
+          <img src="./assets/img/construction3.png" alt="" class="w-full" />
+        </div>
+        <div class="">
+          <img src="./assets/img/constructio4.png" alt="" class="w-full" />
+        </div>
+      </div>
+    </section>
+    <!-- ===============Cleaning after new construction and renovation SECTION end HER============== -->
+
+
+
+
+
+    <!-- ===============Building site - That's how it works! SECTION START HER============== -->
+    <section
+      class="2xl:px-[100px] px-[5%] 2xl:py-[137px] py-[5%] flex justify-center bg-[#F0F5F7] 2xl:gap-[147px] xl:gap-[100px] gap-8 md:flex-row flex-col-reverse items-center"
+    >
+      <div class="md:w-[50%] w-full gap-5 flex items-baseline justify-center">
+        <div class="">
+          <img src="./assets/img/construction4.png" alt="" class="w-full" />
+        </div>
+        <div class="">
+          <img src="./assets/img/construction5.png" alt="" class="w-full" />
+        </div>
+      </div>
+      <div class="md:w-[50%] w-full">
+        <div class="">
+          <h1
+            class="2xl:text-[66px] xl:text-5xl md:text-3xl text-2xl 2xl:leading-[82px] leading-7 text-[#060924] trenda_regular"
+          >
+            Building site - That's how it works!
+          </h1>
+          <div class="2xl:ml-10 ml-5">
+            <ul
+              class="list-decimal text-[#7D8C95] xl:text-[22px] text-sm sofia_regular 2xl:leading-[54px] leading-7 xl:pt-5 pt-2"
+            >
+              <li>
+                Submitted with request documents. In the case of larger
+                construction projects, it is desirable for us to take note
+                of contract documents, technical descriptions, room
+                descriptions and floor plans in order to quickly offer a price
+              </li>
+              <li>
+                V i book a physical or digital meeting to go through the project
+                together.
+              </li>
+              <li>
+                Based on the procurement documentation and other observations
+                during our meeting, a price is calculated and we will then
+                return with a quote.
+              </li>
+            </ul>
+          </div>
+          <div class="flex md:justify-start justify-center">
+            <button
+              class="sofia_regular lg:text-lg text-base text-[#FAFAFA] p-4 bg-[#15238C] rounded-[90px] xl:mt-[80px] lg:mt-10 mt-5"
+            >
+              Become a construction site
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===============Building site - That's how it works! SECTION end HER============== -->
+
+
+
+
+
+    <!-- ===============Cleaning after new construction and renovation SECTION START HER============== -->
+    <section
+      class="2xl:px-[100px] px-[5%] 2xl:py-[130px] py-[5%] flex justify-center bg-[#FAFAFA] 2xl:gap-[147px] xl:gap-[100px] gap-8 lg:flex-row flex-col items-center"
+    >
+      <div class="lg:w-[50%] w-full">
+        <div class="">
+          <h1
+            class="2xl:text-[66px] xl:text-5xl md:text-4xl text-3xl 2xl:leading-[82px] leading-7 text-[#060924] trenda_regular"
+          >
+            Cleaning after house renovation
+          </h1>
+          <p
+            class="text-[#7D8C95] xl:text-[20px] text-base sofia_regular 2xl:leading-10 leading-7 md:pt-2 pt-1"
+          >
+            Have you renovated or built a new one? It is extremely important to
+            remove all dust particles that collect during construction to ensure
+            a good indoor environment. When the construction work is finished,
+            it is completely understandable that you want to quickly unpack the
+            moving boxes and get started with everyday life again. We carry out
+            a thorough construction cleaning to get your home sparkling clean
+            and free of dust particles that could otherwise affect health. 
+          </p>
+        </div>
+        <div class="xl:pt-12 pt-5">
+          <h1 class="trenda_semibold text-[32px] text-[#060924]">
+            How much does a construction cleaning cost?
+          </h1>
+          <p
+            class="text-[#7D8C95] xl:text-[20px] text-base sofia_regular 2xl:leading-10 leading-7 md:pt-2 pt-1"
+          >
+            The cost of a construction cleaning depends on the size of the
+            object. Contact our friendly customer service and we will book a
+            free meeting where we introduce ourselves and go over your needs.
+          </p>
+        </div>
+      </div>
+      <div class="lg:w-[50%] w-full gap-5 flex items-baseline justify-center">
+        <div class="">
+          <img src="./assets/img/construction6.png" alt="" class="w-full" />
+        </div>
+        <div class="">
+          <img src="./assets/img/construction7.png" alt="" class="w-full" />
+        </div>
+      </div>
+    </section>
+    <!-- ===============Cleaning after new construction and renovation SECTION end HER============== -->
+
+
+
+
+
+    <!-- ===============Building site - That's how it works! SECTION START HER============== -->
+    <section
+      class="2xl:p-[100px] p-[5%]  flex justify-center bg-[#F0F5F7] 2xl:gap-[100px] xl:gap-[80px] gap-8 lg:flex-row flex-col items-center">
+      <div class="lg:w-[46%]  w-full ">
+        <h1
+        class="2xl:text-[66px] xl:text-5xl md:text-3xl text-2xl 2xl:leading-[82px] leading-7 text-[#060924] trenda_regular lg:text-start text-center"
+      >
+      Cost proposal
+      construction cleaning
+      </h1>
+      </div>
+      <div class="lg:w-[54%]  w-full">
+       
+       <div class="grid md:grid-cols-2 grid-cols-1 gap-5">
+        <div class="rounded-[20px] bg-[#FAFAFA] 2xl:p-5 p-3">
+            <div class="flex gap-5 items-center justify-center">
+                <img src="./assets/img/tick.png" alt="">
+                <h1 class="sofia_medium 2xl:text-xl text-sm text-[#7D8C95]">Collective agreement</h1>
+            </div>
+        </div>
+        <div class="rounded-[20px] bg-[#FAFAFA] 2xl:p-5 p-3">
+            <div class="flex gap-5 items-center justify-center">
+                <img src="./assets/img/tick.png" alt="">
+                <h1 class="sofia_medium 2xl:text-xl text-sm text-[#7D8C95]">ID06</h1>
+            </div>
+        </div>
+        <div class="rounded-[20px] bg-[#FAFAFA] 2xl:p-5 p-3">
+            <div class="flex gap-5 items-center justify-center">
+                <img src="./assets/img/tick.png" alt="">
+                <h1 class="sofia_medium 2xl:text-xl text-sm text-[#7D8C95]">Satisfied-Customer-Guarantee </h1>
+            </div>
+        </div>
+        <div class="rounded-[20px] bg-[#FAFAFA] 2xl:p-5 p-3">
+            <div class="flex gap-5 items-center justify-center">
+                <img src="./assets/img/tick.png" alt="">
+                <h1 class="sofia_medium 2xl:text-xl text-sm text-[#7D8C95]">Liability insurance </h1>
+            </div>
+        </div>
+
+       </div>
+       
+      </div>
+    </section>
+    <!-- ===============Building site - That's how it works! SECTION end HER============== -->
+
+
+
+
+
+
+    <!-- ===============Building site - That's how it works! SECTION end HER============== -->
+    <section class="2xl:px-[80px] p-[5%] bg-[#060924]">
+        <div
+          class="flex justify-center items-center text-center">
+          <div class="md:w-[79%] w-full">
+            <div class="flex justify-center items-center">
+            <img src="./assets/img/logo3.png" alt="" class="xl:w-[300px] xl:h-[300px] w-24 h-24">
+        </div>
+           
+            <h1
+              class="2xl:text-[60px] xl:text-5xl md:text-3xl text-2xl 2xl:leading-[86px] md:leading-10 leading-8 text-[#FAFAFA] trenda_regular lg:pt-10 pt-2 ">
+            Pssst! Did you know that Städarna has made a climate investment? 
+            </h1>
+            <p
+            class="text-[#7D8C95] xl:text-[20px] md:text-base text-sm sofia_regular 2xl:leading-10 leading-7 md:pt-5 pt-1">
+          For us, it is important that we take care of the planet we live on and do everything we can to offset our impact. A while ago we invested e.g. in intercrops that reduce the emitted carbon dioxide content in the air and thus contribute to a smaller CO2 footprint.
+          </p>
+          <h4 class="text-[#FAFAFA] sofia_medium xl:text-[26px] md:text-xl text-base xl:pt-[60px] md:pt-10 pt-5">Please read about the investment and our work</h4>
+          </div>
+      
+        </div>
+      </section>
+
+
+
+
+
+    <!-- ===============faq section start here============= -->
+    <section
+      class="2xl:py-[100px] md:py-[70px] py-6 2xl:px-[100px] px-[5%] bg-[#F0F5F7]"
+    >
+   
+        <h2
+          class="md:text-start text-center  text-[#060924] trenda_regular 2xl:text-[86px] md:text-5xl text-2xl lg:leading-[116px] md:leading-[80px] leading-10"
+        >
+        Construction cleaning
+        </h2>
+
+        <div class="md:space-y-7 space-y-4 lg:pt-12 pt-5">
+          <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg lg:p-12 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+            >
+              <div class="flex items-center lg:gap-10 gap-2">
+                <h2
+                  class="text-[#7D8C95] lg:text-[60px] md:text-3xl text-base trenda_regular"
+                >
+                  Q1
+                </h2>
+                <span
+                  class="trenda_regular xl:text-[34px] md:text-2xl text-sm text-[#060924] text-left leading-4 md:leading-10"
+                  >Can I book major cleaning after renovation?</span
+                >
+              </div>
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+            >
+              <p
+                class="text-[#7D8C95] sofia_regular lg:text-[20px] text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+              >
+              Yes, we offer cleaning after renovation. Always let us know if your booking concerns cleaning after renovation so we can take more hours due to the amount of construction dust.
+              </p>
+            </div>
+          </div>
+
+          <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg lg:p-12 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+            >
+              <div class="flex items-center lg:gap-10 gap-2">
+                <h2
+                  class="text-[#7D8C95] lg:text-[60px] md:text-3xl text-base trenda_regular"
+                >
+                  Q2
+                </h2>
+                <span
+                  class="trenda_regular xl:text-[34px] md:text-2xl text-sm text-[#060924] text-left leading-4 md:leading-10"
+                  >Do your employees have ID06?</span
+                >
+              </div>
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+            >
+              <p
+                class="text-[#7D8C95] sofia_regular lg:text-[20px] text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+              >
+              Yes, we offer cleaning after renovation. Always let us know if your booking concerns cleaning after renovation so we can take more hours due to the amount of construction dust.
+              </p>
+            </div>
+          </div>
+
+
+        
+         
+       
+        </div>
+    
+    </section>
+    <!-- ===============faq section end here============= -->
+
+    <!-- ===============footer section start here============= -->
+    <section class="2xl:px-[100px] pt-[50px] pb-[30px] p-[5%] bg-[#060924]">
+      <div class="flex items-start justify-between gap-11 xl:flex-row flex-col">
+        <div class="xl:w-[30%] md:w-[50%]">
+          <img src="../build/assets/img/Logo.png" alt="" />
+          <img src="../build/assets/img/logo2.png" alt="" class="pt-5" />
+          <p class="pt-2 text-[#7D8C95] sofia_regular text-base leading-7">
+            Städarna Sverige AB is one of Sweden's largest home service
+            companies with established offices from Gävle in the north to Kalmar
+            in the south. With over 800 employees, we help thousands of private
+            and business customers every month.
+          </p>
+
+          <div
+            class="flex items-center list-none pt-[54px] gap-[30px] cursor-pointer"
+          >
+            <a href=""><img src="../build/assets/img/facebook.png" alt="" /></a>
+            <a href=""><img src="../build/assets/img/insta.png" alt="" /></a>
+            <a href=""><img src="../build/assets/img/linkdin.png" alt="" /></a>
+          </div>
+          <div class="mt-[50px]">
+            <a
+              href="./about_us.html"
+              class="text-[#15238C] sofia_regular text-base underline capitalize"
+              >Read More About us
+            </a>
+          </div>
+        </div>
+        <div class="xl:w-[20%] md:w-[50%]">
+          <ul
+            class="sofia_regular 2xl:text-[20px] text-base text-[#FAFAFA] space-y-4"
+          >
+            <li><a href="">My pages </a></li>
+
+            <li><a href="">Common questions and answers </a></li>
+            <li><a href="">Complaints & Damages </a></li>
+            <li><a href="">Press room </a></li>
+            <li><a href="">Service office (HK) </a></li>
+            <li><a href="">Privacy Policy </a></li>
+            <li><a href="">Contact details for your city </a></li>
+            <li><a href="">Employee page </a></li>
+            <li><a href="">General conditions </a></li>
+            <li><a href="">The Dream Fund </a></li>
+            <li><a href="">Whistleblower </a></li>
+          </ul>
+        </div>
+        <div
+          class="xl:w-[50%] grid md:grid-cols-2 grid-cols-1 gap-5 md:w-full w-full"
+        >
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer1.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5">
+              Book home Town
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer2.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Work here
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer1.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Book Company Town
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer4.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Customer Service
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer2.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Service Office(HK)
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer6.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              English
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <hr class="w-full text-[#7D8C95] mt-8 mb-4" />
+        <div class="text-center">
+          <p class="sofia_regular text-[20px] text-[#7D8C95]">
+            © Copyright 2024 Stædarna all rights reserved
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ===============footer section end here============= -->
+
+    <script>
+      // Select all FAQ toggle buttons
+      const faqToggles = document.querySelectorAll(".faq-toggle");
+
+      faqToggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+          // Get the content and icon related to the clicked toggle
+          const faqContent = toggle.nextElementSibling;
+          const faqIcon = toggle.querySelector(".faq-icon");
+
+          // Toggle the max-height for smooth expansion and collapse
+          if (faqContent.style.maxHeight) {
+            faqContent.style.maxHeight = null; // Close it
+          } else {
+            faqContent.style.maxHeight = faqContent.scrollHeight + "px"; // Open it
+          }
+
+          // Rotate icon
+          faqIcon.classList.toggle("rotate-180");
+        });
+      });
+    </script>
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

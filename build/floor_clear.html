@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section class="bg-[#F0F5F7]">
+      <nav class="xl:px-[100px] md:px-[5%] px-[3%] 2xl:py-11 py-5">
+        <div class="max-w-full">
+          <div class="flex justify-between items-center">
+            <!-- Logo and Navigation -->
+            <div class="flex items-center 2xl:gap-[100px] lg:gap-10">
+              <!-- Logo -->
+              <div class="flex">
+                <a href="./index.html">
+                  <img
+                    src="./assets/img/logo.png"
+                    alt="Company Logo"
+                    class="w-full h-full"
+                  />
+                </a>
+              </div>
+              <!-- Navigation Links -->
+              <div class="hidden lg:block">
+                <ul class="flex 2xl:space-x-[50px] space-x-8 items-center">
+                  <li class="relative group">
+                    <a
+                      href="./floor_clear.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >Services</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="./Home_town.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >Offices</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="./our_prices.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >Faq</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="./about_us.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >About us</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Buttons and Social Icons -->
+            <div class="hidden lg:flex items-center space-x-4">
+              <a href="./contect.html"
+                class="bg-[#15238C] text-white px-6 py-2 lg:py-3 primaryfont rounded-full hover:bg-[#394288] flex items-center space-x-2"
+              >
+                <img
+                  src="./assets/img/navicon.png"
+                  alt="Icon"
+                  class="h-4 lg:h-5 w-4 lg:w-5"
+                />
+                <span class="text-lg trenda_bold">Inspiration</span>
+              </a>
+<a href="./salery_benifits.html">
+              <img
+                src="../build/assets/img/Search.png"
+                alt=""
+                class="cursor-pointer"
+              />
+            </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+              <button
+                id="mobile-menu-button"
+                class="text-black focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden" id="mobile-menu">
+          <ul class="space-y-4 px-4 pt-4 pb-3 text-center">
+            <li>
+              <a
+              href="./floor_clear.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+              href="./Home_town.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >Offices</a
+              >
+            </li>
+            <li>
+              <a
+              href="./our_prices.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >Faq</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about_us.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >About us</a
+              >
+            </li>
+          </ul>
+          <div class="flex items-center md:gap-10 gap-5 justify-center">
+            <a href="./contect.html"
+              class="bg-[#15238C] text-white px-6 py-2 lg:py-3 rounded-full hover:bg-[#394288] flex items-center space-x-2"
+            >
+              <img
+                src="./assets/img/navicon.png"
+                alt="Icon"
+                class="h-4 lg:h-5 w-4 lg:w-5"
+              />
+              <span class="text-lg trenda_bold">Inspiration</span>
+            </a>
+
+            <a href="./salery_benifits.html">
+              <img
+                src="../build/assets/img/Search.png"
+                alt=""
+                class="cursor-pointer"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- ====================HEADER SECTION START HER================= -->
+
+    <section class="bg-[#F0F5F7]">
+      <div
+        class="2xl:px-[100px] px-[5%] 2xl:pt-[100px] pt-[5%] flex justify-center"
+      >
+        <div class="text-center md:w-[76%] w-full">
+          <h1
+            class="2xl:text-[86px] xl:text-7xl md:text-5xl text-4xl 2xl:leading-[106px] leading-10 text-[#060924] trenda_regular"
+          >
+            Floor care for all types of floors
+          </h1>
+          <p
+            class="text-[#7D8C95] xl:text-[20px] text-base sofia_regular 2xl:leading-10 leading-7 md:pt-5 pt-3"
+          >
+            Our cleaning heroes can help you as a private person or at work. We
+            perform floor care on wooden floors, stone floors, plastic floors,
+            linoleum floors and more.
+          </p>
+        </div>
+      </div>
+      <div class="bg-[#F0F5F7] md:pt-[50px] pt-7">
+        <div class="">
+          <img src="./assets/img/floorc1.png" alt="" class="w-full h-full" />
+        </div>
+      </div>
+      <div class="2xl:px-[100px] px-[5%] 2xl:py-[200px] py-[5%]">
+        <div
+          class="flex justify-center items-center 2xl:gap-[100px] xl:gap-[50px] md:gap-9 gap-5 md:flex-row flex-col-reverse"
+        >
+          <div class="md:w-1/2 w-full">
+            <img
+              src="./assets/img/construction2.png"
+              alt=""
+              class="w-full h-full"
+            />
+          </div>
+          <div class="md:w-1/2 w-full">
+            <h1
+              class="2xl:text-[86px] xl:text-5xl md:text-4xl text-3xl 2xl:leading-[106px] leading-10 text-[#060924] trenda_regular"
+            >
+              Dear customer!
+            </h1>
+            <p
+              class="text-[#7D8C95] 2xl:text-[30px] lg:text-xl text-lg sofia_regular 2xl:leading-10 leading-7 lg:pt-5 pt-3"
+            >
+              The cleaners are now part of Hemfrid.
+            </p>
+            <p
+              class="text-[#7D8C95] 2xl:text-[30px] lg:text-xl text-sm sofia_regular 2xl:leading-10 leading-7 lg:pt-5 pt-3"
+            >
+              Contact <a href="" class="text-[#15238C]">info@hemfrid.se</a
+              > or <span class="text-[#15238C]">010 555 85 00</span> to book
+              this service.
+            </p>
+            <p
+              class="text-[#7D8C95] 2xl:text-[30px] lg:text-xl text-sm sofia_regular 2xl:leading-[60px] leading-7 lg:pt-7 pt-3"
+            >
+              Contact us and we'll set up a meeting and go over how we can help!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====================HEADER SECTION START HER================= -->
+
+    <!-- ===============Floor care - extend the lifespan SECTION START HER============== -->
+    <section
+      class="2xl:px-[100px] px-[5%] 2xl:py-[130px] py-[5%] flex justify-center bg-[#FAFAFA] 2xl:gap-[147px] xl:gap-[100px] gap-8 xl:flex-row flex-col items-center"
+    >
+      <div class="2xl:w-[50%] xl:w-[66%] w-full">
+        <div class="">
+          <h1
+            class="2xl:text-[66px] xl:text-5xl md:text-4xl text-3xl 2xl:leading-[82px] leading-7 text-[#060924] trenda_regular md:text-start text-center"
+          >
+            Floor care - extend the lifespan
+          </h1>
+          <p
+            class="text-[#7D8C95] 2xl:text-[20px] text-base sofia_regular 2xl:leading-10 leading-7 md:pt-2 pt-1"
+          >
+            It is a joy to step into a company that has taken all aspects of its
+            premises care seriously. You can feel it in the air and not
+            infrequently also in the atmosphere. When the desks are dusted, the
+            windows polished, the toilets cleaned and the meeting rooms
+            spotless, then it simply feels good for both the employees, the
+            customers and the business. Companies that have realized this know
+            that fresh floors are an important piece of the puzzle for the
+            overall experience.
+          </p>
+        </div>
+        <div class="lg:pt-12 pt-5">
+          <p
+            class="text-[#7D8C95] 2xl:text-[20px] text-base sofia_regular 2xl:leading-10 leading-7"
+          >
+            Therefore, you have probably already ensured that the floor surface
+            in your premises receives regular cleaning. If you want to shine a
+            little extra, however, there is only one thing that applies. Then
+            you should invest in professional and thorough floor care at regular
+            intervals.
+          </p>
+        </div>
+      </div>
+      <div
+        class="2xl:w-[50%] xl:w-[44%] w-full md:gap-5 gap-2 flex items-baseline justify-center"
+      >
+        <div class="">
+          <img src="./assets/img/cfloor2.png" alt="" class="w-full" />
+        </div>
+        <div class="">
+          <img src="./assets/img/cfloor3.png" alt="" class="w-full" />
+        </div>
+      </div>
+    </section>
+    <!-- ===============Cleaning after new construction and renovation SECTION end HER============== -->
+
+    <!-- ===============Building site - That's how it works! SECTION START HER============== -->
+    <section
+      class="2xl:px-[100px] px-[5%] 2xl:py-[147px] py-[8%] flex justify-center bg-[#F0F5F7] 2xl:gap-[147px] xl:gap-[100px] gap-8 lg:flex-row flex-col-reverse items-center"
+    >
+      <div class="lg:w-[50%] w-full">
+        <img src="./assets/img/cfloor4.png" alt="" class="w-full" />
+      </div>
+      <div class="lg:w-[50%] w-full">
+        <div class="">
+          <h1
+            class="2xl:text-[66px] xl:text-5xl md:text-3xl text-2xl 2xl:leading-[82px] leading-7 text-[#060924] trenda_regular"
+          >
+            What types of floors do we perform floor care on?
+          </h1>
+
+          <p
+            class="text-[#7D8C95] 2xl:text-[20px] text-base sofia_regular 2xl:leading-10 leading-7 2xl:pt-5 pt-3"
+          >
+            Wood, plastic, laminate, stone or textile doesn't really matter. We
+            have the knowledge to revive floors that have long since lost their
+            luster. Don't let worn surfaces ruin your business. Invest in floor
+            care from Städarna.
+          </p>
+
+          <div class="2xl:pt-10 md:pt-5 pt-3">
+            <h2
+              class="trenda_semibold 2xl:text-[32px] text-lg text-[#060924] lg:text-start text-center"
+            >
+              Why choose Städarna?
+            </h2>
+            <div class="space-y-5 xl:pt-8 pt-4">
+              <div class="rounded-[20px] bg-[#FAFAFA] 2xl:p-5 p-3">
+                <div class="flex gap-2 items-center">
+                  <img src="./assets/img/tick.png" alt="" />
+                  <h1 class="sofia_medium 2xl:text-lg text-sm text-[#7D8C95]">
+                    <span class="text-[#15238C]"
+                      >Satisfied customer guarantee -</span
+                    >
+                    Quality guarantee with action until you are satisfied
+                  </h1>
+                </div>
+              </div>
+              <div class="rounded-[20px] bg-[#FAFAFA] 2xl:p-5 p-3">
+                <div class="flex gap-2 items-center">
+                  <img src="./assets/img/tick.png" alt="" />
+                  <h1 class="sofia_medium 2xl:text-lg text-sm text-[#7D8C95]">
+                    <span class="text-[#15238C]">Liability insurance -</span> If
+                    the accident were to happen
+                  </h1>
+                </div>
+              </div>
+              <div class="rounded-[20px] bg-[#FAFAFA] 2xl:p-5 p-3">
+                <div class="flex gap-2 items-center">
+                  <img src="./assets/img/tick.png" alt="" />
+                  <h1 class="sofia_medium 2xl:text-lg text-sm text-[#7D8C95]">
+                    <span class="text-[#15238C]">RUT deduction </span>Of course,
+                    RUT deduction also applies to floor care services
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===============Building site - That's how it works! SECTION end HER============== -->
+
+    <!-- ===============Building site - That's how it works! SECTION end HER============== -->
+    <section class="2xl:px-[100px] px-[5%] 2xl:py-[100px] md:py-[50px] py-[15%] bg-[#060924] flex justify-between items-center 2xl:gap-[100px] md:gap-[30px] gap-7 md:flex-row flex-col lg:gap-[50px]">
+     
+        <div class="md:w-1/2 w-full">
+          <h1
+            class="2xl:text-[56px] xl:text-3xl md:text-2xl text-xl 2xl:leading-[66px] md:leading-9 leading-7 text-[#FAFAFA] trenda_regular"
+          >
+          The cleaners' self-evident work
+          </h1>
+          <p
+            class="text-[#7D8C95] 2xl:text-[24px] md:text-base text-sm sofia_regular 2xl:leading-10  xl:leading-9 leading-7 lg:pt-5 pt-1"
+          >
+          Transparency is an incredibly important part for us in our self-evident work. On the one hand, we want to proudly tell you what we do, but we also like to be questioned! If you are interested in reading more about this work and taking a look at our self-explanatory reports, you will find them here !
+          </p>
+       
+        </div>
+        <div class="md:w-1/2 w-full">
+          <img
+            src="./assets/img/cfloor5.png"
+            alt=""
+            class="rounded-[30px] w-full h-full"
+          />
+        </div>
+    
+    </section>
+    <!-- ===============Building site - That's how it works! SECTION end HER============== -->
+
+    <!-- ===============Cleaning after new construction and renovation SECTION START HER============== -->
+    <section
+      class="2xl:px-[100px] px-[5%] 2xl:py-[130px] py-[15%] flex justify-center bg-[#FAFAFA] 2xl:gap-[147px] xl:gap-[100px] gap-5 lg:flex-row flex-col items-center"
+    >
+      <div class="lg:w-[50%] w-full">
+       
+        <div class="">
+          <h1 class="trenda_semibold xl:text-[32px] md:text-2xl text-lg text-[#060924]">
+            Floor care - This is how it works!
+          </h1>
+          <p
+            class="text-[#7D8C95] 2xl:text-xl text-sm sofia_regular 2xl:leading-10  xl:leading-8  leading-7 xl:pt-5 pt-1"
+          >
+          Our knowledgeable employees help recurring amounts of companies with professional floor care. Contact us and we will tell you more about our floor care services and, based on your wishes, we will tailor a plan that suits you.
+          </p>
+        </div>
+        
+        <div class="xl:pt-[30px] pt-3">
+            <h1 class="trenda_semibold xl:text-[32px] md:text-2xl text-lg text-[#060924]">
+                What types of floors do we perform floor care on?
+            </h1>
+            <p
+              class="text-[#7D8C95] 2xl:text-xl text-sm sofia_regular 2xl:leading-10  xl:leading-8  leading-7 xl:pt-5 pt-1"
+            >
+            Whether it's wood, plastic, laminate, stone or textile doesn't really matter. We have the knowledge to revive floors that have long since lost their luster. Don't let worn surfaces ruin your business. Invest in floor care from Städarna.
+            </p>
+          </div>
+          <div class="xl:pt-[30px] pt-3">
+            <h1 class="trenda_semibold xl:text-[32px] md:text-2xl text-lg text-[#060924]">
+                How much does floor care cost?
+            </h1>
+            <p
+              class="text-[#7D8C95] 2xl:text-xl text-sm sofia_regular 2xl:leading-10  xl:leading-8  leading-7 xl:pt-5 pt-1"
+            >
+            The cost of floor maintenance naturally depends on how large the floor surfaces are and what materials the floors are made of. Contact our customer service to get an accurate quote for the care of your floors as quickly as possible. Of course, RUT deductions apply to our floor care services.
+            </p>
+          </div>
+          <div class="xl:pt-[30px] pt-3">
+            <h1 class="trenda_semibold xl:text-[32px] md:text-2xl text-lg text-[#060924]">
+                Conditions for floor care
+            </h1>
+            <p
+              class="text-[#7D8C95] 2xl:text-xl text-sm sofia_regular 2xl:leading-10  xl:leading-8  leading-7 xl:pt-5 pt-1"
+            >
+            Here you can download our conditions for floor care.
+            </p>
+          </div>
+
+
+      </div>
+      <div class="lg:w-[50%] w-full gap-5 flex items-baseline justify-center">
+        <div class="">
+          <img src="./assets/img/cfloor6.png" alt="" class="w-full" />
+        </div>
+        <div class="">
+          <img src="./assets/img/cfloor7.png" alt="" class="w-full" />
+        </div>
+      </div>
+    </section>
+    <!-- ===============Cleaning after new construction and renovation SECTION end HER============== -->
+
+    <!-- ===============faq section start here============= -->
+    <section
+      class="2xl:py-[100px] md:py-[70px] py-6 2xl:px-[100px] px-[5%] bg-[#F0F5F7]"
+    >
+      <h2
+        class="md:text-start text-center text-[#060924] trenda_regular 2xl:text-[86px] md:text-5xl text-2xl lg:leading-[116px] md:leading-[80px] leading-10"
+      >
+      Floor care
+      </h2>
+
+      <div class="md:space-y-7 space-y-4 lg:pt-12 pt-5">
+        <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg lg:p-12 p-5">
+          <button
+            class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+          >
+            <div class="flex items-center lg:gap-10 gap-2">
+              <h2
+                class="text-[#7D8C95] lg:text-[60px] md:text-3xl text-base trenda_regular"
+              >
+                Q1
+              </h2>
+              <span
+                class="trenda_regular lg:text-[34px] md:text-base text-sm text-[#060924] text-left leading-4 lg:leading-10"
+                >Does the room where the floor care is to be carried out have to be empty?</span
+              >
+            </div>
+            <div class="">
+              <svg
+                class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </div>
+          </button>
+          <div
+            class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+          >
+            <p
+              class="text-[#7D8C95] sofia_regular lg:text-xl text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+            >
+            Yes, if possible! Otherwise, we can always carry out floor care on half the floor surface and then move furniture and the like over when the treated surface has dried.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg lg:p-12 p-5">
+          <button
+            class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+          >
+            <div class="flex items-center lg:gap-10 gap-2">
+              <h2
+                class="text-[#7D8C95] lg:text-[60px] md:text-3xl text-base trenda_regular"
+              >
+                Q2
+              </h2>
+              <span
+                class="trenda_regular lg:text-[34px] md:text-base text-sm text-[#060924] text-left leading-4 lg:leading-10"
+                >How long after floor care must the premises be empty?</span
+              >
+            </div>
+            <div class="">
+              <svg
+                class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </div>
+          </button>
+          <div
+            class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+          >
+            <p
+              class="text-[#7D8C95] sofia_regular lg:text-xl text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+            >
+              Yes, we offer cleaning after renovation. Always let us know if
+              your booking concerns cleaning after renovation so we can take
+              more hours due to the amount of construction dust.
+            </p>
+          </div>
+        </div>
+
+
+        <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg lg:p-12 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+            >
+              <div class="flex items-center lg:gap-10 gap-2">
+                <h2
+                  class="text-[#7D8C95] lg:text-[60px] md:text-3xl text-base trenda_regular"
+                >
+                  Q3
+                </h2>
+                <span
+                  class="trenda_regular lg:text-[34px] md:text-base text-sm text-[#060924] text-left leading-4 lg:leading-10"
+                  >How often do you recommend floor care?</span
+                >
+              </div>
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+            >
+              <p
+                class="text-[#7D8C95] sofia_regular lg:text-xl text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+              >
+                Yes, we offer cleaning after renovation. Always let us know if
+                your booking concerns cleaning after renovation so we can take
+                more hours due to the amount of construction dust.
+              </p>
+            </div>
+          </div>
+          
+        <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg lg:p-12 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+            >
+              <div class="flex items-center lg:gap-10 gap-2">
+                <h2
+                  class="text-[#7D8C95] lg:text-[60px] md:text-3xl text-base trenda_regular"
+                >
+                  Q4
+                </h2>
+                <span
+                  class="trenda_regular lg:text-[34px] md:text-base text-sm text-[#060924] text-left leading-4 lg:leading-10"
+                  >Do you need to think about anything special after a floor care is carried out?</span
+                >
+              </div>
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+            >
+              <p
+                class="text-[#7D8C95] sofia_regular lg:text-[20px] text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+              >
+                Yes, we offer cleaning after renovation. Always let us know if
+                your booking concerns cleaning after renovation so we can take
+                more hours due to the amount of construction dust.
+              </p>
+            </div>
+          </div>
+      </div>
+    </section>
+    <!-- ===============faq section end here============= -->
+
+    <!-- ===============footer section start here============= -->
+    <section class="2xl:px-[100px] pt-[50px] pb-[30px] p-[5%] bg-[#060924]">
+      <div class="flex items-start justify-between gap-11 xl:flex-row flex-col">
+        <div class="xl:w-[30%] md:w-[50%]">
+          <img src="../build/assets/img/Logo.png" alt="" />
+          <img src="../build/assets/img/logo2.png" alt="" class="pt-5" />
+          <p class="pt-2 text-[#7D8C95] sofia_regular text-base leading-7">
+            Städarna Sverige AB is one of Sweden's largest home service
+            companies with established offices from Gävle in the north to Kalmar
+            in the south. With over 800 employees, we help thousands of private
+            and business customers every month.
+          </p>
+
+          <div
+            class="flex items-center list-none pt-[54px] gap-[30px] cursor-pointer"
+          >
+            <a href=""><img src="../build/assets/img/facebook.png" alt="" /></a>
+            <a href=""><img src="../build/assets/img/insta.png" alt="" /></a>
+            <a href=""><img src="../build/assets/img/linkdin.png" alt="" /></a>
+          </div>
+          <div class="mt-[50px]">
+            <a
+              href="./about_us.html"
+              class="text-[#15238C] sofia_regular text-base underline capitalize"
+              >Read More About us
+            </a>
+          </div>
+        </div>
+        <div class="xl:w-[20%] md:w-[50%]">
+          <ul
+            class="sofia_regular 2xl:text-[20px] text-base text-[#FAFAFA] space-y-4"
+          >
+            <li><a href="">My pages </a></li>
+
+            <li><a href="">Common questions and answers </a></li>
+            <li><a href="">Complaints & Damages </a></li>
+            <li><a href="">Press room </a></li>
+            <li><a href="">Service office (HK) </a></li>
+            <li><a href="">Privacy Policy </a></li>
+            <li><a href="">Contact details for your city </a></li>
+            <li><a href="">Employee page </a></li>
+            <li><a href="">General conditions </a></li>
+            <li><a href="">The Dream Fund </a></li>
+            <li><a href="">Whistleblower </a></li>
+          </ul>
+        </div>
+        <div
+          class="xl:w-[50%] grid md:grid-cols-2 grid-cols-1 gap-5 md:w-full w-full"
+        >
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer1.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5">
+              Book home Town
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer2.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Work here
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer1.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Book Company Town
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer4.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Customer Service
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer2.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Service Office(HK)
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer6.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              English
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <hr class="w-full text-[#7D8C95] mt-8 mb-4" />
+        <div class="text-center">
+          <p class="sofia_regular text-[20px] text-[#7D8C95]">
+            © Copyright 2024 Stædarna all rights reserved
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ===============footer section end here============= -->
+
+    <script>
+      // Select all FAQ toggle buttons
+      const faqToggles = document.querySelectorAll(".faq-toggle");
+
+      faqToggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+          // Get the content and icon related to the clicked toggle
+          const faqContent = toggle.nextElementSibling;
+          const faqIcon = toggle.querySelector(".faq-icon");
+
+          // Toggle the max-height for smooth expansion and collapse
+          if (faqContent.style.maxHeight) {
+            faqContent.style.maxHeight = null; // Close it
+          } else {
+            faqContent.style.maxHeight = faqContent.scrollHeight + "px"; // Open it
+          }
+
+          // Rotate icon
+          faqIcon.classList.toggle("rotate-180");
+        });
+      });
+    </script>
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

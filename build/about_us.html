@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section class="bg-[#F0F5F7]">
+      <nav class="xl:px-[100px] md:px-[5%] px-[3%] 2xl:py-11 py-5">
+        <div class="max-w-full">
+          <div class="flex justify-between items-center">
+            <!-- Logo and Navigation -->
+            <div class="flex items-center 2xl:gap-[100px] lg:gap-10">
+              <!-- Logo -->
+              <div class="flex">
+                <a href="./index.html">
+                  <img
+                    src="./assets/img/logo.png"
+                    alt="Company Logo"
+                    class="w-full h-full"
+                  />
+                </a>
+              </div>
+              <!-- Navigation Links -->
+              <div class="hidden lg:block">
+                <ul class="flex 2xl:space-x-[50px] space-x-8 items-center">
+                  <li class="relative group">
+                    <a
+                      href="./floor_clear.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >Services</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="./Home_town.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >Offices</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="./our_prices.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >Faq</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="./about_us.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >About us</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Buttons and Social Icons -->
+            <div class="hidden lg:flex items-center space-x-4">
+              <a href="./contect.html"
+                class="bg-[#15238C] text-white px-6 py-2 lg:py-3 primaryfont rounded-full hover:bg-[#394288] flex items-center space-x-2"
+              >
+                <img
+                  src="./assets/img/navicon.png"
+                  alt="Icon"
+                  class="h-4 lg:h-5 w-4 lg:w-5"
+                />
+                <span class="text-lg trenda_bold">Inspiration</span>
+              </a>
+<a href="./salery_benifits.html">
+              <img
+                src="../build/assets/img/Search.png"
+                alt=""
+                class="cursor-pointer"
+              />
+            </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+              <button
+                id="mobile-menu-button"
+                class="text-black focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden" id="mobile-menu">
+          <ul class="space-y-4 px-4 pt-4 pb-3 text-center">
+            <li>
+              <a
+              href="./floor_clear.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+              href="./Home_town.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >Offices</a
+              >
+            </li>
+            <li>
+              <a
+              href="./our_prices.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >Faq</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about_us.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >About us</a
+              >
+            </li>
+          </ul>
+          <div class="flex items-center md:gap-10 gap-5 justify-center">
+            <a href="./contect.html"
+              class="bg-[#15238C] text-white px-6 py-2 lg:py-3 rounded-full hover:bg-[#394288] flex items-center space-x-2"
+            >
+              <img
+                src="./assets/img/navicon.png"
+                alt="Icon"
+                class="h-4 lg:h-5 w-4 lg:w-5"
+              />
+              <span class="text-lg trenda_bold">Inspiration</span>
+            </a>
+
+            <a href="./salery_benifits.html">
+              <img
+                src="../build/assets/img/Search.png"
+                alt=""
+                class="cursor-pointer"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!--==============HERO SECTION START HERE============ -->
+    <section
+      class="2xl:py-24 md:py-20 py-5 2xl:px-[100px] px-[5%] bg-[#F0F5F7]"
+    >
+      <h1
+        class="2xl:text-[86px] text-center xl:text-7xl md:text-5xl text-4xl 2xl:leading-[106px] leading-10 text-[#060924] trenda_regular lg:pt-5 pt-2 capitalize"
+      >
+        Discover Our Story
+      </h1>
+      <div class="lg:my-[100px] my-14 space-y-8">
+        <div class="flex gap-7 lg:flex-row flex-col">
+          <div class="lg:w-[30%] w-full">
+            <img
+              src="./assets/img/about1.png"
+              alt=""
+              class="rounded-[30px] w-full h-full"
+            />
+          </div>
+          <div
+            class="lg:w-[70%] w-full rounded-[30px] bg-[#FAFAFA] md:p-[40px] p-5"
+          >
+            <div class="">
+              <h1
+                class="trenda_bold md:text-[44px] text-2xl text-[#15238C] capitalize"
+              >
+                About Städarna
+              </h1>
+              <p
+                class="trenda-regular md:text-[40px] text-xl text-[#060924] 2xl:pt-5 md:pt-5 pt-0 capitalize"
+              >
+                The Beginning of a Journey
+              </p>
+            </div>
+            <div class="flex justify-end xl:pt-[79px] md:pt-[30px] pt-3">
+              <p
+                class="md:w-[81%] w-full md:text-end text-left sofia_regular md:text-[20px] text-base text-[#7D8C95] 2xl:leading-10 leading-8"
+              >
+                In 2008, Städarna was founded with a vision to revolutionize the
+                cleaning industry. Today, we are one of Sweden’s largest home
+                service companies, active in 24 locations and helping thousands
+                of customers each month.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-7 lg:flex-row flex-col-reverse">
+          <div
+            class="lg:w-[70%] w-full rounded-[30px] bg-[#FAFAFA] md:p-[40px] p-5"
+          >
+            <div class="">
+              <h1
+                class="trenda_bold md:text-[44px] text-2xl text-[#15238C] capitalize"
+              >
+                Our Journey
+              </h1>
+              <p
+                class="trenda-regular md:text-[40px] text-xl text-[#060924] 2xl:pt-5 md:pt-5 pt-0 capitalize"
+              >
+                From an Idea to Reality
+              </p>
+            </div>
+            <div class="flex justify-end xl:pt-[79px] md:pt-[30px] pt-3">
+              <p
+                class="md:w-[81%] w-full md:text-end text-left sofia_regular md:text-[20px] text-base text-[#7D8C95] 2xl:leading-10 leading-8"
+              >
+                The journey started with Tjoffe Sjögren, who was inspired to
+                create a cleaning company that people could trust. Over time,
+                Städarna grew from a small team into a company with over 800
+                employees, all united by a shared goal.
+              </p>
+            </div>
+          </div>
+          <div class="lg:w-[30%] w-full">
+            <img
+              src="./assets/img/about2.png"
+              alt=""
+              class="rounded-[30px] w-full h-full"
+            />
+          </div>
+        </div>
+
+        <div class="flex gap-7 lg:flex-row flex-col">
+          <div class="lg:w-[30%] w-full">
+            <img
+              src="./assets/img/about3.png"
+              alt=""
+              class="rounded-[30px] w-full h-full"
+            />
+          </div>
+          <div
+            class="lg:w-[70%] w-full rounded-[30px] bg-[#FAFAFA] md:p-[40px] p-5"
+          >
+            <div class="">
+              <h1
+                class="trenda_bold md:text-[44px] text-2xl text-[#15238C] capitalize"
+              >
+                Our Vision
+              </h1>
+              <p
+                class="trenda-regular md:text-[40px] text-xl text-[#060924] 2xl:pt-5 md:pt-5 pt-0 capitalize"
+              >
+                People-Centered Cleaning Services
+              </p>
+            </div>
+            <div class="flex justify-end xl:pt-[79px] md:pt-[30px] pt-3">
+              <p
+                class="md:w-[81%] w-full md:text-end text-left sofia_regular md:text-[20px] text-base text-[#7D8C95] 2xl:leading-10 leading-8"
+              >
+                At Städarna, we prioritize people — both our employees and our
+                customers. Our vision is to have the industry’s most satisfied
+                customers and proudest employees, while changing the perception
+                of the cleaning industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===============HERO SECTION END HERE============= -->
+
+    <!-- ===============Our Core values start  HERE============= -->
+    <section class="xl:py-20 md:py-10 py-5 2xl:px-[100px] px-[5%] bg-[#FAFAFA]">
+      <div class="justify-center flex text-center">
+        <div class="md:w-[76%] w-full">
+          <h1
+            class="2xl:text-[86px] text-center xl:text-7xl md:text-5xl text-4xl 2xl:leading-[106px] leading-10 text-[#060924] trenda_regular capitalize"
+          >
+            Our Core values
+          </h1>
+          <p
+            class="sofia_regular md:text-[20px] text-base text-[#7D8C95] 2xl:leading-10 leading-8 md:pt-7 pt-2"
+          >
+            Our core values—Responsibility, Treatment, and Quality—drive
+            everything we do. With a commitment to satisfied customers and proud
+            employees, we ensure exceptional service by taking ownership,
+            offering world-class hospitality, and maintaining the highest
+            quality standards.
+          </p>
+        </div>
+      </div>
+      <div
+        class="grid 2xl:grid-col-3 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 md:py-[70px] py-10 2xl:gap-[100px] md:gap-10 gap-5"
+      >
+        <div class="flex lg:gap-5 gap-2">
+          <div class="">
+            <img
+              src="./assets/img/about4.png"
+              alt=""
+              class="rounded-[20px] w-full h-full"
+            />
+          </div>
+          <div
+            class="rounded-[20px] bg-[#F0F5F7] flex items-center md:py-[31px] py-4 md:pl-[30px] pl-2 2xl:w-[53%] xl:w-[59%] w-full"
+          >
+            <h2 class="trenda_regular md:text-[32px] text-lg text-[#15238C]">
+              Responsibility
+            </h2>
+          </div>
+        </div>
+        <div class="flex lg:gap-5 gap-2">
+          <div class="">
+            <img
+              src="./assets/img/about5.png"
+              alt=""
+              class="rounded-[20px] w-full h-full"
+            />
+          </div>
+          <div
+            class="rounded-[20px] bg-[#F0F5F7] flex items-center md:py-[31px] py-4 md:pl-[30px] pl-2 2xl:w-[53%] xl:w-[59%] w-full"
+          >
+            <h2
+              class="trenda_regular md:text-[32px] text-lg text-[#15238C] capitalize"
+            >
+              Treatment
+            </h2>
+          </div>
+        </div>
+        <div class="flex lg:gap-5 gap-2">
+          <div class="">
+            <img
+              src="./assets/img/about6.png"
+              alt=""
+              class="rounded-[20px] w-full h-full"
+            />
+          </div>
+          <div
+            class="rounded-[20px] bg-[#F0F5F7] flex items-center md:py-[31px] py-4 md:pl-[30px] pl-2 2xl:w-[53%] xl:w-[59%] w-full"
+          >
+            <h2
+              class="trenda_regular md:text-[32px] text-lg text-[#15238C] capitalize"
+            >
+              Quality
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===============Our Core values end  HERE============= -->
+
+    <!-- ===============Employee Safety Comes First start  HERE============= -->
+    <section
+      class="2xl:py-[150px] xl:py-[100px] lg:py-[80px] py-14 2xl:px-[100px] px-[5%] bg-[#F0F5F7]"
+    >
+      <div
+        class="flex justify-between xl:gap-[100px] gap-8 md:flex-row flex-col"
+      >
+        <div class="md:w-[50%] w-full">
+          <div class="">
+            <h1
+              class="2xl:text-[86px] xl:text-7xl md:text-4xl text-3xl 2xl:leading-[116px] leading-10 text-[#060924] trenda_regular capitalize"
+            >
+              Employee Safety Comes First
+            </h1>
+            <p
+              class="sofia_regular md:text-[20px] text-base text-[#7D8C95] 2xl:leading-10 leading-8 md:pt-5 pt-2"
+            >
+              While customer satisfaction is vital, we never compromise on the
+              safety and well-being of our employees. Everyone deserves to feel
+              100% secure in their work environment.
+            </p>
+          </div>
+          <div class="md:pt-[50px] pt-5 xl:h-[400px] h-[300px]">
+            <img
+              src="../build/assets/img/about7.png"
+              alt=""
+              class="w-full h-full rounded-[50px]"
+            />
+          </div>
+        </div>
+
+        <div class="md:w-[50%] w-full">
+          <div class="xl:h-[652px] h-[400px]">
+            <img
+              src="../build/assets/img/about8.png"
+              alt=""
+              class="w-full h-full rounded-[50px]"
+            />
+          </div>
+          <div class="">
+            <p
+              class="sofia_regular md:text-[20px] text-base text-[#7D8C95] 2xl:leading-10 leading-8 md:pt-[50px] pt-5"
+            >
+              In the past, we've turned down projects where we couldn’t
+              guarantee this, and we’ll do it again, no matter how big the
+              client. Our commitment to safety is unwavering.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====================AWARDS SECTION START HERE============== -->
+      <div class="xl:pt-[150px] md:pt-[100px] pt-10">
+        <h1
+          class="2xl:text-[86px] xl:text-7xl md:text-4xl text-3xl text-[#060924] trenda_regular capitalize text-center"
+        >
+          Awards & Recognition
+        </h1>
+        <div class="swiper mySwiper mt-[60px]">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide bg-[#FAFAFA] rounded-[30px]">
+              <div class="2xl:p-10 md:p-5 p-4 md:h-[400px] h-[333px]">
+                <div class="h-[250px]">
+                  <img
+                    src="./assets/img/about10.png"
+                    alt=""
+                    class="rounded-[30px] w-full h-full"
+                  />
+                </div>
+                <p
+                  class="xl:pt-5 pt-2 text-left text-[#15238C] sofia_regular xl:text-[24px] text-base"
+                >
+                  EY Entrepreneur of the Year (2021)
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide bg-[#FAFAFA] rounded-[30px]">
+              <div class="2xl:p-10 md:p-5 p-4 md:h-[400px] h-[333px]">
+                <div class="h-[250px]">
+                  <img
+                    src="./assets/img/about11.png"
+                    alt=""
+                    class="rounded-[30px] w-full h-full"
+                  />
+                </div>
+                <p
+                  class="xl:pt-5 pt-2 text-left text-[#15238C] sofia_regular xl:text-[24px] text-base"
+                >
+                  Employer of the Year (2018)
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide bg-[#FAFAFA] rounded-[30px]">
+              <div class="2xl:p-10 md:p-5 p-4 md:h-[400px] h-[333px]">
+                <div class="h-[250px]">
+                  <img
+                    src="./assets/img/about12.png"
+                    alt=""
+                    class="rounded-[30px] w-full h-full"
+                  />
+                </div>
+                <p
+                  class="xl:pt-5 pt-2 text-left text-[#15238C] sofia_regular xl:text-[24px] text-base"
+                >
+                  Norrköping Municipality Young Ambassador
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide bg-[#FAFAFA] rounded-[30px]">
+              <div class="2xl:p-10 md:p-5 p-4 md:h-[400px] h-[333px]">
+                <div class="h-[250px]">
+                  <img
+                    src="./assets/img/about13.png"
+                    alt=""
+                    class="rounded-[30px] w-full h-full"
+                  />
+                </div>
+                <p
+                  class="xl:pt-5 pt-2 text-left text-[#15238C] sofia_regular xl:text-[24px] text-base"
+                >
+                  EY Entrepreneur of the Year (2021)
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide bg-[#FAFAFA] rounded-[30px]">
+              <div class="2xl:p-10 md:p-5 p-4 md:h-[400px] h-[333px]">
+                <div class="h-[250px]">
+                  <img
+                    src="./assets/img/about10.png"
+                    alt=""
+                    class="rounded-[30px] w-full h-full"
+                  />
+                </div>
+                <p
+                  class="xl:pt-5 pt-2 text-left text-[#15238C] sofia_regular xl:text-[24px] text-base"
+                >
+                  EY Entrepreneur of the Year (2021)
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide bg-[#FAFAFA] rounded-[30px]">
+              <div class="2xl:p-10 md:p-5 p-4 md:h-[400px] h-[333px]">
+                <div class="h-[250px]">
+                  <img
+                    src="./assets/img/about11.png"
+                    alt=""
+                    class="rounded-[30px] w-full h-full"
+                  />
+                </div>
+                <p
+                  class="xl:pt-5 pt-2 text-left text-[#15238C] sofia_regular xl:text-[24px] text-base"
+                >
+                  Employer of the Year (2018)
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ====================AWARDS SECTION END HERE============== -->
+    </section>
+    <!-- ===============Employee Safety Comes First end  HERE============= -->
+
+    <!-- ===============Why Choose Städarna? start  HERE============= -->
+    <section class="2xl:p-[100px] p-[5%] bg-[#FAFAFA]">
+      <h1
+        class="2xl:text-[86px] xl:text-7xl md:text-4xl text-3xl 2xl:leading-[116px] leading-10 text-[#060924] trenda_regular capitalize"
+      >
+        Why Choose Städarna?
+      </h1>
+
+      <div class="py-[100px] md:space-y-7 space-x-5">
+        <div
+          class="rounded-[50px] bg-[#F0F5F7] xl:p-[50px] md:p-7 p-7 flex items-center lg:gap-[60px] md:gap-8 gap-5 md:flex-row flex-col"
+        >
+          <img src="../build/assets/img/about14.png" alt="" />
+          <div class="md:text-left text-center">
+            <h1
+              class="sofia_semibold xl:text-[36px] md:text-2xl text-xl text-[#060924] capitalize md:leading-9 leading-5"
+            >
+              Satisfied Customer Guarantee
+            </h1>
+            <p
+              class="2xl:pt-[30px] lg:pt-5 md:pt-4 pt-3 sofia_regular md:text-[20px] text-base text-[#7D8C95] leading-5"
+            >
+              If you’re not happy with our work, we’ll return to make it right.
+              Just report your concern promptly, and we’ll take care of the
+              rest.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="rounded-[50px] bg-[#F0F5F7] xl:p-[50px] md:p-7 p-7 flex items-center lg:gap-[60px] md:gap-8 gap-5 md:flex-row flex-col"
+        >
+          <img src="../build/assets/img/about15.png" alt="" />
+          <div class="md:text-left text-center">
+            <h1
+              class="sofia_semibold xl:text-[36px] md:text-2xl text-xl text-[#060924] capitalize md:leading-9 leading-5"
+            >
+              Confidentiality Assured
+            </h1>
+            <p
+              class="2xl:pt-[30px] lg:pt-5 md:pt-4 pt-3 sofia_regular md:text-[20px] text-base text-[#7D8C95] leading-5"
+            >
+              Our employees are bound by confidentiality agreements, ensuring
+              your privacy at both home and office.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="rounded-[50px] bg-[#F0F5F7] xl:p-[50px] md:p-7 p-7 flex items-center lg:gap-[60px] md:gap-8 gap-5 md:flex-row flex-col"
+        >
+          <img src="../build/assets/img/about16.png" alt="" />
+          <div class="md:text-left text-center">
+            <h1
+              class="sofia_semibold xl:text-[36px] md:text-2xl text-xl text-[#060924] capitalize md:leading-9 leading-5"
+            >
+              Comprehensive Liability Insurance
+            </h1>
+            <p
+              class="2xl:pt-[30px] lg:pt-5 md:pt-4 pt-3 sofia_regular md:text-[20px] text-base text-[#7D8C95] leading-5"
+            >
+              Your home and belongings are fully protected by our insurance
+              policies.
+            </p>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div
+        class="rounded-[50px] bg-[#F0F5F7] xl:p-[50px] md:p-7 p-7 flex items-center lg:gap-[60px] md:gap-8 gap-5 md:flex-row flex-col"
+      >
+        <img src="../build/assets/img/about17.png" alt="" />
+        <div class="md:text-left text-center">
+          <h1
+            class="sofia_semibold xl:text-[36px] md:text-2xl text-xl text-[#060924] capitalize md:leading-9 leading-5"
+          >
+          Fair Working Conditions
+          </h1>
+          <p
+            class="2xl:pt-[30px] lg:pt-5 md:pt-4 pt-3 sofia_regular md:text-[20px] text-base text-[#7D8C95] leading-5"
+          >
+          We provide a collective agreement for our employees, ensuring a better work environment. When our employees thrive, your home benefits too.
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+      <div
+      class="rounded-[50px] bg-[#F0F5F7] xl:p-[50px] md:p-7 p-7 flex items-center lg:gap-[60px] md:gap-8 gap-5 md:flex-row flex-col"
+    >
+      <img src="../build/assets/img/about18.png" alt="" />
+      <div class="md:text-left text-center">
+        <h1
+          class="sofia_semibold xl:text-[36px] md:text-2xl text-xl text-[#060924] capitalize md:leading-9 leading-5"
+        >
+        Criminal Record Screening
+        </h1>
+        <p
+          class="2xl:pt-[30px] lg:pt-5 md:pt-4 pt-3 sofia_regular md:text-[20px] text-base text-[#7D8C95] leading-5"
+        >
+        For your peace of mind, all our employees undergo criminal record checks before entering your home.
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div
+    class="rounded-[50px] bg-[#F0F5F7] xl:p-[50px] md:p-7 p-7 flex items-center lg:gap-[60px] md:gap-8 gap-5 md:flex-row flex-col"
+  >
+    <img src="../build/assets/img/about19.png" alt="" />
+    <div class="md:text-left text-center">
+      <h1
+        class="sofia_semibold xl:text-[36px] md:text-2xl text-xl text-[#060924] capitalize md:leading-9 leading-5"
+      >
+      Consistent Quality
+      </h1>
+      <p
+        class="2xl:pt-[30px] lg:pt-5 md:pt-4 pt-3 sofia_regular md:text-[20px] text-base text-[#7D8C95] leading-5"
+      >
+      The same team will handle your home and office cleaning, ensuring consistent, top-tier service.
+      </p>
+    </div>
+  </div>
+
+
+
+  <div
+  class="rounded-[50px] bg-[#F0F5F7] xl:p-[50px] md:p-7 p-7 flex items-center lg:gap-[60px] md:gap-8 gap-5 md:flex-row flex-col"
+>
+  <img src="../build/assets/img/about20.png" alt="" />
+  <div class="md:text-left text-center">
+    <h1
+      class="sofia_semibold xl:text-[36px] md:text-2xl text-xl text-[#060924] capitalize md:leading-9 leading-5"
+    >
+    Eco-Friendly Practices
+    </h1>
+    <p
+      class="2xl:pt-[30px] lg:pt-5 md:pt-4 pt-3 sofia_regular md:text-[20px] text-base text-[#7D8C95] leading-5"
+    >
+    We use environmentally conscious cleaning products, safe for both your home and the planet.    </p>
+  </div>
+</div>
+
+
+
+
+
+
+      </div>
+    </section>
+    <!-- ===============Why Choose Städarna? end  HERE============= -->
+
+    <!-- ===============footer section start here============= -->
+    <section class="2xl:px-[100px] pt-[50px] pb-[30px] p-[5%] bg-[#060924]">
+      <div class="flex items-start justify-between gap-11 xl:flex-row flex-col">
+        <div class="xl:w-[30%] md:w-[50%]">
+          <img src="../build/assets/img/Logo.png" alt="" />
+          <img src="../build/assets/img/logo2.png" alt="" class="pt-5" />
+          <p class="pt-2 text-[#7D8C95] sofia_regular text-base leading-7">
+            Städarna Sverige AB is one of Sweden's largest home service
+            companies with established offices from Gävle in the north to Kalmar
+            in the south. With over 800 employees, we help thousands of private
+            and business customers every month.
+          </p>
+
+          <div
+            class="flex items-center list-none pt-[54px] gap-[30px] cursor-pointer"
+          >
+            <a href=""><img src="../build/assets/img/facebook.png" alt="" /></a>
+            <a href=""><img src="../build/assets/img/insta.png" alt="" /></a>
+            <a href=""><img src="../build/assets/img/linkdin.png" alt="" /></a>
+          </div>
+          <div class="mt-[50px]">
+            <a
+              href=""
+              class="text-[#15238C] sofia_regular text-base underline capitalize"
+              >Read More About us
+            </a>
+          </div>
+        </div>
+        <div class="xl:w-[20%] md:w-[50%]">
+          <ul
+            class="sofia_regular 2xl:text-[20px] text-base text-[#FAFAFA] space-y-4"
+          >
+            <li><a href="">My pages </a></li>
+
+            <li><a href="">Common questions and answers </a></li>
+            <li><a href="">Complaints & Damages </a></li>
+            <li><a href="">Press room </a></li>
+            <li><a href="">Service office (HK) </a></li>
+            <li><a href="">Privacy Policy </a></li>
+            <li><a href="">Contact details for your city </a></li>
+            <li><a href="">Employee page </a></li>
+            <li><a href="">General conditions </a></li>
+            <li><a href="">The Dream Fund </a></li>
+            <li><a href="">Whistleblower </a></li>
+          </ul>
+        </div>
+        <div
+          class="xl:w-[50%] grid md:grid-cols-2 grid-cols-1 gap-5 md:w-full w-full"
+        >
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer1.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5">
+              Book home Town
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer2.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Work here
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer1.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Book Company Town
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer4.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Customer Service
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer2.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Service Office(HK)
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer6.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              English
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <hr class="w-full text-[#7D8C95] mt-8 mb-4" />
+        <div class="text-center">
+          <p class="sofia_regular text-[20px] text-[#7D8C95]">
+            © Copyright 2024 Stædarna all rights reserved
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ===============footer section end here============= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1920: {
+            slidesPerView: 3.5,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

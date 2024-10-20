@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+     
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section class="bg-[#F0F5F7]">
+      <nav class="xl:px-[100px] md:px-[5%] px-[3%] 2xl:py-11 py-5">
+        <div class="max-w-full">
+          <div class="flex justify-between items-center">
+            <!-- Logo and Navigation -->
+            <div class="flex items-center 2xl:gap-[100px] lg:gap-10">
+              <!-- Logo -->
+              <div class="flex">
+                <a href="./index.html">
+                  <img
+                    src="./assets/img/logo.png"
+                    alt="Company Logo"
+                    class="w-full h-full"
+                  />
+                </a>
+              </div>
+              <!-- Navigation Links -->
+              <div class="hidden lg:block">
+                <ul class="flex 2xl:space-x-[50px] space-x-8 items-center">
+                  <li class="relative group">
+                    <a
+                      href="./floor_clear.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >Services</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="./Home_town.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >Offices</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="./our_prices.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >Faq</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="./about_us.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >About us</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Buttons and Social Icons -->
+            <div class="hidden lg:flex items-center space-x-4">
+              <a href="./contect.html"
+                class="bg-[#15238C] text-white px-6 py-2 lg:py-3 primaryfont rounded-full hover:bg-[#394288] flex items-center space-x-2"
+              >
+                <img
+                  src="./assets/img/navicon.png"
+                  alt="Icon"
+                  class="h-4 lg:h-5 w-4 lg:w-5"
+                />
+                <span class="text-lg trenda_bold">Inspiration</span>
+              </a>
+<a href="./salery_benifits.html">
+              <img
+                src="../build/assets/img/Search.png"
+                alt=""
+                class="cursor-pointer"
+              />
+            </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+              <button
+                id="mobile-menu-button"
+                class="text-black focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden" id="mobile-menu">
+          <ul class="space-y-4 px-4 pt-4 pb-3 text-center">
+            <li>
+              <a
+              href="./floor_clear.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+              href="./Home_town.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >Offices</a
+              >
+            </li>
+            <li>
+              <a
+              href="./our_prices.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >Faq</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about_us.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >About us</a
+              >
+            </li>
+          </ul>
+          <div class="flex items-center md:gap-10 gap-5 justify-center">
+            <a href="./contect.html"
+              class="bg-[#15238C] text-white px-6 py-2 lg:py-3 rounded-full hover:bg-[#394288] flex items-center space-x-2"
+            >
+              <img
+                src="./assets/img/navicon.png"
+                alt="Icon"
+                class="h-4 lg:h-5 w-4 lg:w-5"
+              />
+              <span class="text-lg trenda_bold">Inspiration</span>
+            </a>
+
+            <a href="./salery_benifits.html">
+              <img
+                src="../build/assets/img/Search.png"
+                alt=""
+                class="cursor-pointer"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!--==============HERO SECTION START HERE============ -->
+    <section
+      class="2xl:py-36 md:py-20 py-14 2xl:px-[100px] px-[5%] bg-[#F0F5F7]"
+    >
+      <div
+        class="flex justify-between items-center lg:flex-row flex-col lg:gap-0 gap-5"
+      >
+        <div class="2xl:w-[37%] xl:w-[28%] lg:w-[30%] w-full">
+          <h3 class="text-2xl text-[#15238C] sofia_semibold capitalize">
+            Cleaning Revolution
+          </h3>
+          <h1
+            class="2xl:text-[86px] xl:text-7xl md:text-5xl text-4xl 2xl:leading-[106px] leading-10 text-[#060924] trenda_regular lg:pt-5 pt-2 capitalize"
+          >
+            Experience Effortless Living
+          </h1>
+        </div>
+        <div class="flex items-center justify-center">
+          <img
+            src="../build/assets/img/hero1.png"
+            alt=""
+            class="shadow-circle rounded-full"
+          />
+        </div>
+
+        <div class="2xl:w-[29%] xl:w-[35%] lg:w-[30%] w-full">
+          <p
+            class="text-[#7D8C95] xl:text-[20px] text-base md:text-right text-left sofia_regular 2xl:leading-10 leading-7"
+          >
+            Our cleaning service goes beyond just tidying up; we give you more
+            time to focus on the things that matter. From deep cleaning to
+            regular upkeep, we handle it all, ensuring you can enjoy life
+            without the hassle. Our team is trained, well-compensated, and happy
+            to ensure your home feels perfect, inside and out.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="md:mt-[100px] mt-10 flex md:gap-8 gap-4 md:flex-row flex-col-reverse"
+      >
+        <div class="w-full md:w-[23%]">
+          <img
+            src="./assets/img/hero2.png"
+            alt="Image 1"
+            class="w-full h-[100%] rounded-md"
+          />
+        </div>
+
+        <div class="w-full md:w-[74%]">
+          <img
+            src="./assets/img/hero3.png"
+            alt="Image 2"
+            class="w-full h-[100%] rounded-md"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- ===============HERO SECTION END HERE============= -->
+
+    <!-- ===============CLEANING SOLUTION FOR EVERY SPACE SECTION START HERE============= -->
+    <section class="2xl:py-40 md:py-20 py-14 2xl:px-[100px] px-[5%]">
+      <div class="flex items-center justify-center flex-col text-center">
+        <h1
+          class="trenda_regular md:text-[56px] text-4xl text-[#060924] md:leading-[66px] leading-10"
+        >
+          Cleaning Solutions for Every Space
+        </h1>
+        <p class="pt-6 text-[#7D8C95] text-[20px] leading-7 sofia_regular">
+          Experience unmatched cleanliness and care with our comprehensive
+          services, ensuring your home and <br class="lg:block hidden" />
+          workplace shine with professionalism and efficiency.
+        </p>
+      </div>
+      <div
+        class="grid 2xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 pt-[60px] md:gap-[30px] gap-4"
+      >
+        <div class="bg-[#F0F5F7] rounded-[30px] lg:p-[30px] p-4">
+          <div class="flex md:gap-7 gap-2 items-center">
+            <img
+              src="../build/assets/img/constructionsite.png"
+              alt=""
+              class="md:h-full md:w-[30%] h-20 w-20"
+            />
+            <div class="">
+              <p
+                class="text-[#060924] trenda_bold lg:text-2xl md:text-lg text-base"
+              >
+                Construction Site
+              </p>
+              <p
+                class="text-[#7D8C95] lg:text-lg text-sm xl:leading-9 leading-4 sofia_regular"
+              >
+                Comprehensive Cleaning for Your Project
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#F0F5F7] rounded-[30px] lg:p-[30px] p-4">
+          <div class="flex md:gap-7 gap-2 items-center">
+            <img
+              src="../build/assets/img/home.png"
+              alt=""
+              class="md:h-full md:w-[30%] h-20 w-20"
+            />
+            <div class="">
+              <p
+                class="text-[#060924] trenda_bold lg:text-2xl md:text-lg text-base"
+              >
+                Home Town
+              </p>
+              <p
+                class="text-[#7D8C95] lg:text-lg text-sm xl:leading-9 leading-4 sofia_regular"
+              >
+                Relax While We Clean
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#F0F5F7] rounded-[30px] lg:p-[30px] p-4">
+          <div class="flex md:gap-7 gap-2 items-center">
+            <img
+              src="../build/assets/img/florcare.png"
+              alt=""
+              class="md:h-full md:w-[30%] h-20 w-20"
+            />
+            <div class="">
+              <p
+                class="text-[#060924] trenda_bold lg:text-2xl md:text-lg text-base"
+              >
+                Floor Care
+              </p>
+              <p
+                class="text-[#7D8C95] lg:text-lg text-sm xl:leading-9 leading-4 sofia_regular"
+              >
+                Protect and Maintain Your Floors
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#F0F5F7] rounded-[30px] lg:p-[30px] p-4">
+          <div class="flex md:gap-7 gap-2 items-center">
+            <img
+              src="../build/assets/img/cleaning.png"
+              alt=""
+              class="md:h-full md:w-[30%] h-20 w-20"
+            />
+            <div class="">
+              <p
+                class="text-[#060924] trenda_bold lg:text-2xl md:text-lg text-base"
+              >
+                Cleaning as a Salary Benefit
+              </p>
+              <p
+                class="text-[#7D8C95] lg:text-lg text-sm xl:leading-9 leading-4 sofia_regular"
+              >
+                A Unique Perk for Your Employees
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#F0F5F7] rounded-[30px] lg:p-[30px] p-4">
+          <div class="flex md:gap-7 gap-2 items-center">
+            <img
+              src="../build/assets/img/companytown.png"
+              alt=""
+              class="md:h-full md:w-[30%] h-20 w-20"
+            />
+            <div class="">
+              <p
+                class="text-[#060924] trenda_bold lg:text-2xl md:text-lg text-base"
+              >
+                Company town
+              </p>
+              <p
+                class="text-[#7D8C95] lg:text-lg text-sm xl:leading-9 leading-4 sofia_regular"
+              >
+                Professional Cleaning for Your Business
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-[#F0F5F7] rounded-[30px] lg:p-[30px] p-4">
+          <div class="flex md:gap-7 gap-2 items-center">
+            <img
+              src="../build/assets/img/windowcleaning.png"
+              alt=""
+              class="md:h-full md:w-[30%] h-20 w-20"
+            />
+            <div class="">
+              <p
+                class="text-[#060924] trenda_bold lg:text-2xl md:text-lg text-base"
+              >
+                Window Cleaning
+              </p>
+              <p
+                class="text-[#7D8C95] lg:text-lg text-sm xl:leading-9 leading-4 sofia_regular"
+              >
+                See Clearly with Sparkling Windows
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============CLEANING SOLUTION FOR EVERY SPACE SECTION END HERE============= -->
+
+    <!-- ===============A Trusted Partner for All Your Cleaning Needs section start here============= -->
+    <section
+      class="2xl:py-48 md:py-20 py-14 2xl:px-[100px] px-[5%] bg-[#F0F5F7]"
+    >
+      <div
+        class="flex justify-between items-center lg:flex-row flex-col lg:gap-0 gap-6"
+      >
+        <div class="basis-[42%]">
+          <h1
+            class="trenda_regular 2xl:text-[66px] xl:text-[50px] text-4xl text-[#060924] 2xl:leading-[82px] leading-10 lg:leading-[50px] xl:leading-[72px]"
+          >
+            A Trusted Partner for All Your Cleaning Needs
+          </h1>
+          <div class="">
+            <p class="pt-4 text-[#7D8C95] text-[20px] leading-7 sofia_regular">
+              A cleaning company you can be confident with. We are Sweden's
+              second largest cleaning company and you can rest assured that we
+              have liability insurance and a collective agreement with great
+              conditions for all cleaning heroes.
+            </p>
+            <p class="pt-10 text-[#7D8C95] text-[20px] leading-7 sofia_regular">
+              We make everyday life easier for people, with people. 
+            </p>
+          </div>
+
+          <a href="./connstruction_site.html"
+            class="bg-[#15238C] text-white py-4 md:mt-[100px] mt-10 rounded-full hover:bg-[#394288] flex items-center text-lg trenda_bold md:w-[45%] w-full text-center justify-center"
+          >
+            Become a customer
+          </a>
+        </div>
+        <div class="basis-[40%]">
+          <img src="./assets/img/hero4.png" alt="" class="w-full h-full" />
+        </div>
+      </div>
+    </section>
+    <!-- ===============A Trusted Partner for All Your Cleaning Needs section start here============= -->
+
+    <!-- ===============What Our Clients Are Saying section start here============= -->
+    <section class="2xl:py-40 md:py-20 py-14 2xl:px-[100px] px-[5%]">
+      <div class="flex justify-center mb-[115px]">
+        <div class="flex justify-between items-center md:w-[70%] w-full">
+          <img
+            src="../build/assets/img/q1.png"
+            alt=""
+            class="2xl:w-[117px] md:w-[85px] w-8"
+          />
+          <h1
+            class="trenda_regular 2xl:text-[66px] xl:text-[50px] text-4xl text-[#060924] capitalize text-center"
+          >
+            What Our Clients Are Saying
+          </h1>
+          <img
+            src="../build/assets/img/q2.png"
+            alt=""
+            class="2xl:w-[117px] md:w-[85px] w-8"
+          />
+        </div>
+      </div>
+      <div class="swiper mySwiper md:!w-[70%] w-full">
+        <div class="swiper-wrapper md:pb-24 pb-10">
+          <div class="swiper-slide">
+            <div class="flex flex-col justify-center items-center">
+              <div class="w-[100px] h-[100px]">
+                <img
+                  src="../build/assets/img/user1.png"
+                  alt=""
+                  class="rounded-[30px]"
+                />
+              </div>
+              <h3
+                class="text-[#15238C] trenda_bold md:text-2xl text-xl md:pt-10 pt-3"
+              >
+                Peter, Hometown customer
+              </h3>
+              <p
+                class="text-[#7D8C95] 2xl:text-[38px] 2xl:leading-[60px] md:text-2xl md:leading-10 text-base leading-7 sofia_light pt-5"
+              >
+                "The time I save I use as quality time, for me and my dog ​​out
+                in nature. I am incredibly pleased that I chose Städarna as my
+                cleaning company!”
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col justify-center items-center">
+              <div class="w-[100px] h-[100px]">
+                <img
+                  src="../build/assets/img/user1.png"
+                  alt=""
+                  class="rounded-[30px]"
+                />
+              </div>
+              <h3
+                class="text-[#15238C] trenda_bold md:text-2xl text-xl md:pt-10 pt-3"
+              >
+                Peter, Hometown customer
+              </h3>
+              <p
+                class="text-[#7D8C95] 2xl:text-[38px] 2xl:leading-[60px] md:text-2xl md:leading-10 text-base leading-7 sofia_light pt-5"
+              >
+                "The time I save I use as quality time, for me and my dog ​​out
+                in nature. I am incredibly pleased that I chose Städarna as my
+                cleaning company!”
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col justify-center items-center">
+              <div class="w-[100px] h-[100px]">
+                <img
+                  src="../build/assets/img/user1.png"
+                  alt=""
+                  class="rounded-[30px]"
+                />
+              </div>
+              <h3
+                class="text-[#15238C] trenda_bold md:text-2xl text-xl md:pt-10 pt-3"
+              >
+                Peter, Hometown customer
+              </h3>
+              <p
+                class="text-[#7D8C95] 2xl:text-[38px] 2xl:leading-[60px] md:text-2xl md:leading-10 text-base leading-7 sofia_light pt-5"
+              >
+                "The time I save I use as quality time, for me and my dog ​​out
+                in nature. I am incredibly pleased that I chose Städarna as my
+                cleaning company! ”
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col justify-center items-center">
+              <div class="w-[100px] h-[100px]">
+                <img
+                  src="../build/assets/img/user1.png"
+                  alt=""
+                  class="rounded-[30px]"
+                />
+              </div>
+              <h3
+                class="text-[#15238C] trenda_bold md:text-2xl text-xl md:pt-10 pt-3"
+              >
+                Peter, Hometown customer
+              </h3>
+              <p
+                class="text-[#7D8C95] 2xl:text-[38px] 2xl:leading-[60px] md:text-2xl md:leading-10 text-base leading-7 sofia_light pt-5"
+              >
+                "The time I save I use as quality time, for me and my dog ​​out
+                in nature. I am incredibly pleased that I chose Städarna as my
+                cleaning company!”
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex justify-center absolute bottom-0 left-1/2 right-1/2 mb-5"
+        >
+          <div
+            class="swiper-button-prev flex items-center justify-center cursor-pointer"
+          >
+            <img src="../build/assets/img/Right.png" alt="" />
+          </div>
+
+          <div
+            class="swiper-button-next flex items-center justify-center cursor-pointer"
+          >
+            <img src="../build/assets/img/Left.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===============What Our Clients Are Saying section end here============= -->
+
+    <section class="2xl:px-[50px] p-[5%] bg-[#060924]">
+      <div
+        class="flex justify-between xl:items-baseline items-center gap-5 xl:flex-row flex-col"
+      >
+        <div class="md:text-start text-center">
+          <h3 class="text-2xl text-[#FAFAFA] sofia_semibold capitalize">
+            Pro Cleaning Tips
+          </h3>
+          <h1
+            class="2xl:text-[60px] xl:text-5xl md:text-4xl text-2xl 2xl:leading-[86px] md:leading-10 leading-8 text-[#FAFAFA] trenda_regular lg:pt-5 pt-2 capitalize"
+          >
+            Elevate Your Cleaning <br />
+            Game with Pro Tips!
+          </h1>
+        </div>
+        <div
+          class="grid 2xl:grid-cols-5 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[20px]"
+        >
+          <button
+            class="sofia_regular text-lg text-[#FAFAFA] p-4 bg-[#15238C] rounded-[90px]"
+          >
+            Cleaning dishwasher
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#FAFAFA] p-4 bg-[#15238C] rounded-[90px]"
+          >
+            Banana flies
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#FAFAFA] p-4 bg-[#15238C] rounded-[90px]"
+          >
+            Cleaning windows
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#FAFAFA] p-4 bg-[#15238C] rounded-[90px]"
+          >
+            Inspiration
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#FAFAFA] p-4 bg-[#15238C] rounded-[90px]"
+          >
+            Clean the coffee maker
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#FAFAFA] p-4 bg-[#15238C] rounded-[90px]"
+          >
+            Stop in the sink
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#FAFAFA] p-4 bg-[#15238C] rounded-[90px]"
+          >
+            Wash the carpet
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#FAFAFA] p-4 bg-[#15238C] rounded-[90px]"
+          >
+            Clean the microwave
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#FAFAFA] p-4 bg-[#15238C] rounded-[90px]"
+          >
+            Clean shower
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#FAFAFA] p-4 bg-[#15238C] rounded-[90px]"
+          >
+            Walls Mites in bed
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#FAFAFA] p-4 bg-[#15238C] rounded-[90px]"
+          >
+            Clean oven
+          </button>
+
+          <button
+            class="sofia_regular text-lg text-[#FAFAFA] p-4 bg-[#15238C] rounded-[90px]"
+          >
+            Clean windows
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#FAFAFA] p-4 bg-[#15238C] rounded-[90px]"
+          >
+            Clean the toilet
+          </button>
+          <button
+            class="sofia_regular text-lg text-[#FAFAFA] p-4 bg-[#15238C] rounded-[90px]"
+          >
+            Home cleaning
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============Elevate Your Cleaning Game with Pro Tips! section end here============= -->
+    <!-- ===============faq section start here============= -->
+    <section
+      class="2xl:py-[200px] md:py-[100px] py-14 2xl:px-[100px] px-[5%] bg-[#F0F5F7]"
+    >
+      <div class="flex flex-col justify-center items-center">
+        <h2
+          class="text-center xl:my-20 md:my-10 my-5 text-[#060924] trenda_regular md:text-[86px] text-4xl lg:leading-[116px] md:leading-[80px] leading-10"
+        >
+          Common Questions
+        </h2>
+
+        <div class="md:space-y-7 space-y-4">
+          <!-- FAQ 1 -->
+          <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg md:p-12 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+            >
+              <div class="flex items-center md:gap-10 gap-2">
+                <h2
+                  class="text-[#7D8C95] md:text-[60px] text-base trenda_regular"
+                >
+                  Q1
+                </h2>
+                <span
+                  class="trenda_regular md:text-[34px] text-sm text-[#060924] text-left leading-4 md:leading-10"
+                  >Can I change the cleaning package?</span
+                >
+              </div>
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+            >
+              <p
+                class="text-[#7D8C95] sofia_regular md:text-[20px] text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+              >
+                Of course, you can! It is fine to adjust your package both up
+                and down. However, you cannot change your package within the
+                current month, but the change is made for the following month.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg md:p-12 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+            >
+              <div class="flex items-center md:gap-10 gap-2">
+                <h2
+                  class="text-[#7D8C95] md:text-[60px] text-base trenda_regular"
+                >
+                  Q2
+                </h2>
+                <span
+                  class="trenda_regular md:text-[34px] text-sm text-[#060924] text-left leading-4 md:leading-10"
+                  >What cleaning material do you use?</span
+                >
+              </div>
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+            >
+              <p
+                class="text-[#7D8C95] sofia_regular md:text-[20px] text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+              >
+                Of course, you can! It is fine to adjust your package both up
+                and down. However, you cannot change your package within the
+                current month, but the change is made for the following month.
+              </p>
+            </div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg md:p-12 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+            >
+              <div class="flex items-center md:gap-10 gap-2">
+                <h2
+                  class="text-[#7D8C95] md:text-[60px] text-base trenda_regular"
+                >
+                  Q3
+                </h2>
+                <span
+                  class="trenda_regular md:text-[34px] text-sm text-[#060924] text-left leading-4 md:leading-10"
+                  >What commitment period and notice period do I have?</span
+                >
+              </div>
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+            >
+              <p
+                class="text-[#7D8C95] sofia_regular md:text-[20px] text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+              >
+                Of course, you can! It is fine to adjust your package both up
+                and down. However, you cannot change your package within the
+                current month, but the change is made for the following month.
+              </p>
+            </div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg md:p-12 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+            >
+              <div class="flex items-center md:gap-10 gap-2">
+                <h2
+                  class="text-[#7D8C95] md:text-[60px] text-base trenda_regular"
+                >
+                  Q4
+                </h2>
+                <span
+                  class="trenda_regular md:text-[34px] text-sm text-[#060924] text-left leading-4 md:leading-10"
+                  >I have a pet, can you still clean my place?</span
+                >
+              </div>
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+            >
+              <p
+                class="text-[#7D8C95] sofia_regular md:text-[20px] text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+              >
+                Of course, you can! It is fine to adjust your package both up
+                and down. However, you cannot change your package within the
+                current month, but the change is made for the following month.
+              </p>
+            </div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg md:p-12 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+            >
+              <div class="flex items-center md:gap-10 gap-2">
+                <h2
+                  class="text-[#7D8C95] md:text-[60px] text-base trenda_regular"
+                >
+                  Q5
+                </h2>
+                <span
+                  class="trenda_regular md:text-[34px] text-sm text-[#060924] text-left leading-4 md:leading-10"
+                  >What do I need to do myself before my cleaning
+                  occasion?</span
+                >
+              </div>
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+            >
+              <p
+                class="text-[#7D8C95] sofia_regular md:text-[20px] text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+              >
+                Of course, you can! It is fine to adjust your package both up
+                and down. However, you cannot change your package within the
+                current month, but the change is made for the following month.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg md:p-12 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+            >
+              <div class="flex items-center md:gap-10 gap-2">
+                <h2
+                  class="text-[#7D8C95] md:text-[60px] text-base trenda_regular"
+                >
+                  Q6
+                </h2>
+                <span
+                  class="trenda_regular md:text-[34px] text-sm text-[#060924] text-left leading-4 md:leading-10"
+                  >How much does house cleaning cost?</span
+                >
+              </div>
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+            >
+              <p
+                class="text-[#7D8C95] sofia_regular md:text-[20px] text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+              >
+                Of course, you can! It is fine to adjust your package both up
+                and down. However, you cannot change your package within the
+                current month, but the change is made for the following month.
+              </p>
+            </div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg md:p-12 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+            >
+              <div class="flex items-center md:gap-10 gap-2">
+                <h2
+                  class="text-[#7D8C95] md:text-[60px] text-base trenda_regular"
+                >
+                  Q7
+                </h2>
+                <span
+                  class="trenda_regular md:text-[34px] text-sm text-[#060924] text-left leading-4 md:leading-10"
+                  >Does the cleaners have a collective agreement?</span
+                >
+              </div>
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+            >
+              <p
+                class="text-[#7D8C95] sofia_regular md:text-[20px] text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+              >
+                Of course, you can! It is fine to adjust your package both up
+                and down. However, you cannot change your package within the
+                current month, but the change is made for the following month.
+              </p>
+            </div>
+          </div>
+          <!-- FAQ 2 -->
+          <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg md:p-12 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+            >
+              <div class="flex items-center md:gap-10 gap-2">
+                <h2
+                  class="text-[#7D8C95] md:text-[60px] text-base trenda_regular"
+                >
+                  Q8
+                </h2>
+                <span
+                  class="trenda_regular md:text-[34px] text-sm text-[#060924] text-left leading-4 md:leading-10"
+                  >Are all your employees qualified for their services?</span
+                >
+              </div>
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+            >
+              <p
+                class="text-[#7D8C95] sofia_regular md:text-[20px] text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+              >
+                Of course, you can! It is fine to adjust your package both up
+                and down. However, you cannot change your package within the
+                current month, but the change is made for the following month.
+              </p>
+            </div>
+          </div>
+          <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg md:p-12 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+            >
+              <div class="flex items-center md:gap-10 gap-2">
+                <h2
+                  class="text-[#7D8C95] md:text-[60px] text-base trenda_regular"
+                >
+                  Q9
+                </h2>
+                <span
+                  class="trenda_regular md:text-[34px] text-sm text-[#060924] text-left leading-4 md:leading-10"
+                  >What is included in a house cleaning?</span
+                >
+              </div>
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+            >
+              <p
+                class="text-[#7D8C95] sofia_regular md:text-[20px] text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+              >
+                Of course, you can! It is fine to adjust your package both up
+                and down. However, you cannot change your package within the
+                current month, but the change is made for the following month.
+              </p>
+            </div>
+          </div>
+          <div class="bg-[#FAFAFA] rounded-[60px] shadow-lg md:p-12 p-5">
+            <button
+              class="faq-toggle w-full flex justify-between items-center focus:outline-none"
+            >
+              <div class="flex items-center md:gap-10 gap-2">
+                <h2
+                  class="text-[#7D8C95] md:text-[60px] text-base trenda_regular"
+                >
+                  Q10
+                </h2>
+                <span
+                  class="trenda_regular md:text-[34px] text-sm text-[#060924] text-left leading-4 md:leading-10"
+                  >How much does window cleaning cost?</span
+                >
+              </div>
+              <div class="">
+                <svg
+                  class="faq-icon w-6 h-6 text-gray-800 transition-transform duration-300"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </div>
+            </button>
+            <div
+              class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6"
+            >
+              <p
+                class="text-[#7D8C95] sofia_regular md:text-[20px] text-sm pt-4 xl:leading-10 md:leading-5 leading-0"
+              >
+                Of course, you can! It is fine to adjust your package both up
+                and down. However, you cannot change your package within the
+                current month, but the change is made for the following month.
+              </p>
+            </div>
+          </div>
+
+          <!-- More FAQ items can be added similarly -->
+        </div>
+      </div>
+    </section>
+    <!-- ===============faq section end here============= -->
+    <!-- ===============footer section start here============= -->
+    <section
+      class="2xl:px-[100px]  pt-[50px] pb-[30px] p-[5%] bg-[#060924] ">
+      <div class="flex items-start justify-between gap-11 xl:flex-row flex-col ">
+      <div class="xl:w-[30%] md:w-[50%]">
+        <img src="../build/assets/img/Logo.png" alt="" />
+        <img src="../build/assets/img/logo2.png" alt="" class="pt-5"/>
+        <p class="pt-2 text-[#7D8C95] sofia_regular text-base leading-7">
+          Städarna Sverige AB is one of Sweden's largest home service companies
+          with established offices from Gävle in the north to Kalmar in the
+          south. With over 800 employees, we help thousands of private and
+          business customers every month.
+        </p>
+
+        <div class="flex items-center  list-none pt-[54px] gap-[30px] cursor-pointer">
+          <a href=""><img src="../build/assets/img/facebook.png" alt="" /></a>
+          <a href=""><img src="../build/assets/img/insta.png" alt="" /></a>
+          <a href=""><img src="../build/assets/img/linkdin.png" alt="" /></a>
+        </div>
+        <div class="mt-[50px]">
+        <a href="./about_us.html" class="text-[#15238C] sofia_regular text-base underline capitalize">Read More About us </a>
+      </div>
+      </div>
+      <div class="xl:w-[20%] md:w-[50%]">
+        <ul class="sofia_regular 2xl:text-[20px] text-base text-[#FAFAFA] space-y-4">
+          <li><a href="">My pages </a></li>
+
+       
+          <li><a href="">Common questions and answers </a></li>
+          <li><a href="">Complaints & Damages </a></li>
+          <li><a href="">Press room </a></li>
+          <li><a href="">Service office (HK) </a></li>
+          <li><a href="">Privacy Policy </a></li>
+          <li><a href="">Contact details for your city </a></li>
+          <li><a href="">Employee page </a></li>
+          <li><a href="">General conditions </a></li>
+          <li><a href="">The Dream Fund </a></li>
+          <li><a href="">Whistleblower </a></li>
+        </ul>
+      </div>
+      <div class="xl:w-[50%] grid md:grid-cols-2 grid-cols-1 gap-5 md:w-full w-full">
+        <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+          <img src="../build/assets/img/footer1.png" alt="" />
+          <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5">Book home Town</p>
+        </a>
+        <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+          <img src="../build/assets/img/footer2.png" alt="" />
+          <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">Work here</p>
+        </a>
+        <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+          <img src="../build/assets/img/footer1.png" alt="" />
+          <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">Book Company Town</p>
+        </a>
+        <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+          <img src="../build/assets/img/footer4.png" alt="" />
+          <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">Customer Service</p>
+        </a>
+        <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+          <img src="../build/assets/img/footer2.png" alt="" />
+          <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">Service Office(HK)</p>
+        </a>
+        <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+          <img src="../build/assets/img/footer6.png" alt="" />
+          <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">English</p>
+        </a>
+       
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <hr class="w-full text-[#7D8C95] mt-8 mb-4">
+      <div class="text-center">
+        <p class="sofia_regular text-[20px] text-[#7D8C95]">© Copyright 2024 Stædarna all rights reserved</p>
+      </div>
+    </div>
+    </section>
+    <!-- ===============footer section end here============= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      // Select all FAQ toggle buttons
+      const faqToggles = document.querySelectorAll(".faq-toggle");
+
+      faqToggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+          // Get the content and icon related to the clicked toggle
+          const faqContent = toggle.nextElementSibling;
+          const faqIcon = toggle.querySelector(".faq-icon");
+
+          // Toggle the max-height for smooth expansion and collapse
+          if (faqContent.style.maxHeight) {
+            faqContent.style.maxHeight = null; // Close it
+          } else {
+            faqContent.style.maxHeight = faqContent.scrollHeight + "px"; // Open it
+          }
+
+          // Rotate icon
+          faqIcon.classList.toggle("rotate-180");
+        });
+      });
+    </script>
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

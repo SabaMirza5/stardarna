@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <style>
+      .swiper-button-prev::after,
+      .swiper-button-next::after {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section class="bg-[#F0F5F7]">
+      <nav class="xl:px-[100px] md:px-[5%] px-[3%] 2xl:py-11 py-5">
+        <div class="max-w-full">
+          <div class="flex justify-between items-center">
+            <!-- Logo and Navigation -->
+            <div class="flex items-center 2xl:gap-[100px] lg:gap-10">
+              <!-- Logo -->
+              <div class="flex">
+                <a href="./index.html">
+                  <img
+                    src="./assets/img/logo.png"
+                    alt="Company Logo"
+                    class="w-full h-full"
+                  />
+                </a>
+              </div>
+              <!-- Navigation Links -->
+              <div class="hidden lg:block">
+                <ul class="flex 2xl:space-x-[50px] space-x-8 items-center">
+                  <li class="relative group">
+                    <a
+                      href="./floor_clear.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >Services</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="./Home_town.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >Offices</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="./our_prices.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >Faq</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                  <li class="relative group">
+                    <a
+                      href="./about_us.html"
+                      class="text-[#060924] text-lg capitalize trenda_semibold"
+                      >About us</a
+                    >
+                    <span
+                      class="block h-[2px] bg-[#15238C] absolute bottom-0 left-0 w-0 group-hover:w-full transition-all duration-300 ease-in-out"
+                    ></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Buttons and Social Icons -->
+            <div class="hidden lg:flex items-center space-x-4">
+              <a href="./contect.html"
+                class="bg-[#15238C] text-white px-6 py-2 lg:py-3 primaryfont rounded-full hover:bg-[#394288] flex items-center space-x-2"
+              >
+                <img
+                  src="./assets/img/navicon.png"
+                  alt="Icon"
+                  class="h-4 lg:h-5 w-4 lg:w-5"
+                />
+                <span class="text-lg trenda_bold">Inspiration</span>
+              </a>
+<a href="./salery_benifits.html">
+              <img
+                src="../build/assets/img/Search.png"
+                alt=""
+                class="cursor-pointer"
+              />
+            </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="lg:hidden">
+              <button
+                id="mobile-menu-button"
+                class="text-black focus:outline-none"
+              >
+                <svg
+                  class="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="lg:hidden hidden" id="mobile-menu">
+          <ul class="space-y-4 px-4 pt-4 pb-3 text-center">
+            <li>
+              <a
+              href="./floor_clear.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a
+              href="./Home_town.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >Offices</a
+              >
+            </li>
+            <li>
+              <a
+              href="./our_prices.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >Faq</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about_us.html"
+                class="text-[#060924] block text-lg capitalize trenda_semibold"
+                >About us</a
+              >
+            </li>
+          </ul>
+          <div class="flex items-center md:gap-10 gap-5 justify-center">
+            <a href="./contect.html"
+              class="bg-[#15238C] text-white px-6 py-2 lg:py-3 rounded-full hover:bg-[#394288] flex items-center space-x-2"
+            >
+              <img
+                src="./assets/img/navicon.png"
+                alt="Icon"
+                class="h-4 lg:h-5 w-4 lg:w-5"
+              />
+              <span class="text-lg trenda_bold">Inspiration</span>
+            </a>
+
+            <a href="./salery_benifits.html">
+              <img
+                src="../build/assets/img/Search.png"
+                alt=""
+                class="cursor-pointer"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- ===============A Trusted Partner for All Your Cleaning Needs section start here============= -->
+    <section
+      class="2xl:py-36 md:py-20 py-14 2xl:px-[100px] px-[5%] bg-[#F0F5F7]"
+    >
+      <div
+        class="flex justify-between items-center md:flex-row flex-col lg:gap-[100px] gap-10"
+      >
+        <div class="md:w-[50%] w-full">
+          <p class="sofia_semibold text-[#15238C] xl:text-2xl text-xl pt-2">
+            Home cleaning & Home service
+          </p>
+          <h1
+            class="trenda_regular 2xl:text-[86px] xl:text-5xl text-4xl text-[#060924] 2xl:leading-[106px] leading-10 lg:leading-[50px] xl:leading-[72px]"
+          >
+            We help you with the cleaning
+          </h1>
+
+          <p
+            class="pt-2 text-[#7D8C95] xl:text-xl text-base xl:leading-10 leading-5 sofia_regular"
+          >
+            Treat yourself to something wonderful!  We give you both a clean
+            home and more time for other things?
+          </p>
+
+          <button
+            class="bg-[#15238C] text-white py-4 md:mt-12 mt-7 rounded-full hover:bg-[#394288] flex items-center text-lg trenda_bold md:w-[45%] w-full text-center justify-center"
+          >
+            Book Cleaning
+          </button>
+        </div>
+        <div class="md:w-[50%] w-full">
+          <img src="./assets/img/hometown1.png" alt="" class="w-full h-full" />
+        </div>
+      </div>
+    </section>
+    <!-- ===============A Trusted Partner for All Your Cleaning Needs section start here============= -->
+
+    <!-- ====================Curious START HER================= -->
+    <section
+      class="bg-[#FAFAFA] xl:py-[100px] md:py-28 py-14 2xl:px-[100px] px-[5%]"
+    >
+      <div class="flex justify-center items-center flex-col">
+        <div class="text-center lg:w-[70%] w-full">
+          <h3 class="md:text-2xl text-lg text-[#15238C] sofia_medium">
+            We would love to clean your home! ? 
+          </h3>
+          <h1
+            class="2xl:text-[66px] xl:text-4xl md:text-3xl text-2xl 2xl:leading-[82px] md:leading-10 leading-7 text-[#060924] trenda_regular 2xl:pt-5 pt-2 capitalize"
+          >
+            Book digital hometown meeting
+          </h1>
+          <div class="">
+            <ul
+              class="list-decimal list-inside text-[#7D8C95] 2xl:text-xl text-sm sofia_regular 2xl:leading-10 leading-7 xl:pt-6 pt-2"
+            >
+              <li>You fill in your information in our online form</li>
+              <li>
+                We contact you for a free phone meeting where we tell you who we
+                are and how we can help you
+              </li>
+              <li>
+                We present a cost proposal, based on which cleaning package best
+                suits your needs and discuss whether you would like any specific
+                options. The most common is to book the Standard Package every
+                or every other week.
+              </li>
+              <li>
+                You decide to accept, and get in touch with your local office,
+                who will return with suggestions for scheduling
+              </li>
+              <li>We start cleaning at your house!</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="lg:pt-[80px] pt-10 flex items-center xl:gap-[120px] gap-10 lg:flex-row flex-col-reverse"
+      >
+        <div
+          class="lg:w-[40%] w-full md:space-y-5 space-y-3 xl:text-start text-center"
+        >
+          <h1
+            class="trenda_regular text-[#060924] xl:text-[43px] md:text-2xl text-xl"
+          >
+            Where do you live?
+          </h1>
+          <p
+            class="sofia_medium text-[#060924] uppercase xl:text-lg md:text-base text-sm"
+          >
+            CHOOSE THE CITY THAT IS CLOSEST TO YOU*
+          </p>
+          <div class="w-full">
+            <select
+              name=""
+              id=""
+              class="w-full p-5 rounded-[20px] outline-none bg-transparent border border-gray-200 sofia_regular text-[#7D8C95] md:text-lg text-sm"
+            >
+              <option value="">Eskilstuna</option>
+              <option value="">Karlskoga</option>
+              <option value="">Kalmar</option>
+              <option value="">Jönköping</option>
+              <option value="">Eskilstuna</option>
+            </select>
+          </div>
+        </div>
+        <div
+          class="lg:w-[60%] w-full bg-[#F0F5F7] p-7 flex items-center gap-5 rounded-[50px] md:flex-row flex-col md:text-start text-center"
+        >
+          <img src="./assets/img/sb7.png" alt="" />
+          <div class="">
+            <h1 class="sofia_medium text-2xl text-[#060924]">Dear customer!</h1>
+            <p
+              class="sofia_regular xl:text-base text-sm text-[#7D8C95] xl:leading-9 leading-6"
+            >
+              The cleaners in your city have become part of Hemfrid. For booking
+              cleaning help, we refer you to Hemfrid
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ====================Curious SECTION START HER================= -->
+
+
+
+
+
+
+    <!-- ===============Building site - That's how it works! SECTION end HER============== -->
+    <section
+      class="2xl:px-[100px] px-[5%] 2xl:py-[100px] md:py-[50px] py-[15%] bg-[#060924] flex justify-between  2xl:gap-[100px] md:gap-[30px] gap-7 md:flex-row flex-col lg:gap-[50px]"
+    >
+      <div class="md:w-1/2 w-full">
+        <div class="flex justify-start">
+        <img src="./assets/img/qoute1.png" alt="" />
+    </div>
+        <p
+          class="text-[#FFFFFF] 2xl:text-[28px] md:text-base text-sm sofia_regular 2xl:leading-[50px] xl:leading-9 leading-7 lg:pt-5 pt-1"
+        >
+          "The time I save I use as quality time, for me and my dog ​​out in
+          nature.  <br />I am incredibly pleased that I chose Städarna as my
+          cleaning company!”
+        </p>
+        <h1
+          class="2xl:text-[28x] xl:text-xl text-lg  text-[#FAFAFA] sofia_bold md:pt-[110px] pt-3"
+        >
+        -Peter, Hometown customer
+        </h1>
+      </div>
+      <div class="md:w-1/2 w-full">
+        <p
+          class="text-[#FFFFFF] 2xl:text-[28px] md:text-base text-sm sofia_regular 2xl:leading-[50px] xl:leading-9 leading-7 md:pt-[59px] pt-5"
+        >
+        "The cleaners have not only made our home clean and nice, they have cleaned up all the mess in everyday life. Since the Cleaners came into our home, our everyday life has become so much more positive and simple. That a cleaning company could contribute so much zen was a bit unexpected..."
+        </p>
+        <h1
+          class="2xl:text-[28x] xl:text-xl text-lg  text-[#FAFAFA] sofia_bold lg:pt-[50px] md:pt-9 pt-3"
+        >
+        - Hampus, Hemstäds customer
+        </h1>
+        <div class="flex justify-end">
+        <img src="./assets/img/quote2.png" alt="" />
+    </div>
+      </div>
+    </section>
+    <!-- ===============Building site - That's how it works! SECTION end HER============== -->
+
+
+
+  <!-- ===============Cleaning after new construction and renovation SECTION START HER============== -->
+  <section
+  class="2xl:px-[100px] px-[5%] 2xl:py-[130px] py-[5%] flex justify-center bg-[#F0F5F7] 2xl:gap-[147px] xl:gap-[100px] gap-5 lg:flex-row flex-col items-center">
+  <div class="lg:w-[50%] w-full gap-5 flex items-baseline justify-center">
+    <div class="">
+      <img src="./assets/img/hometown2.png" alt="" class="w-full" />
+    </div>
+    <div class="">
+      <img src="./assets/img/hometown3.png" alt="" class="w-full" />
+    </div>
+  </div>
+  <div class="lg:w-[50%] w-full">
+   
+    <div class="">
+      <h1 class="trenda_semibold xl:text-[32px] md:text-2xl text-lg text-[#060924]">
+        No preparation
+      </h1>
+      <p
+        class="text-[#7D8C95] 2xl:text-xl text-sm sofia_regular 2xl:leading-10  xl:leading-8  leading-7 xl:pt-5 pt-1"
+      >
+      If you don't want to do any special preparation to reset your home, it's good to keep in mind that it may take a couple of cleaning sessions before the home is completely clean. We only recommend you not choosing an introductory cleaning service if you are switching directly from another cleaning company.
+      </p>
+    </div>
+    
+    <div class="xl:pt-[30px] pt-3">
+        <h1 class="trenda_semibold xl:text-[32px] md:text-2xl text-lg text-[#060924]">
+            Initial cleaning ( recommended )
+        </h1>
+        <p
+          class="text-[#7D8C95] 2xl:text-xl text-sm sofia_regular 2xl:leading-10  xl:leading-8  leading-7 xl:pt-5 pt-1"
+        >
+        For those who want to get a good result from the first cleaning, we recommend an initial cleaning. Here, we carry out the same stages as during regular house cleaning, but set aside more hours to be able to guarantee a really clean result from the first occasion.
+        </p>
+      </div>
+      <div class="xl:pt-[30px] pt-3">
+        <h1 class="trenda_semibold xl:text-[32px] md:text-2xl text-lg text-[#060924]">
+            Major cleaning
+        </h1>
+        <p
+          class="text-[#7D8C95] 2xl:text-xl text-sm sofia_regular 2xl:leading-10  xl:leading-8  leading-7 xl:pt-5 pt-1"
+        >
+        For those who have high demands on a fresh home or a very dirty home, the usual steps in a home cleaning are not always sufficient to give a clean feeling. For those customers who have not had cleaning help before, we recommend starting with a major cleaning.
+        </p>
+      </div>
+      
+
+
+  </div>
+ 
+  
+</section>
+<section class="2xl:py-40 md:py-20 py-14 2xl:px-[100px] px-[5%] bg-[#F0F5F7]">
+    <div class="flex items-center justify-center flex-col text-center">
+      <h1
+        class="trenda_regular xl:text-[56px] md:text-3xl text-2xl text-[#060924] md:leading-[66px] leading-10"
+      >
+      Why choose the hometown of Städarna?
+      </h1>
+     
+    </div>
+    <div
+      class="grid 2xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-1 grid-cols-1 pt-[60px] md:gap-[30px] gap-4"
+    >
+      <div class="bg-[#FAFAFA] rounded-[30px] lg:p-[30px] p-4">
+        <div class="flex md:gap-7 gap-2 items-center">
+          <img
+            src="../build/assets/img/i1.png"
+            alt=""
+            class="md:h-full md:w-[30%] h-20 w-20"
+          />
+          <div class="">
+            <p
+              class="text-[#060924] trenda_bold lg:text-2xl md:text-lg text-base"
+            >
+            People First
+            </p>
+            <p
+              class="text-[#7D8C95] lg:text-lg text-xs xl:leading-9 leading-4 sofia_regular"
+            >
+            When our employees are happy, your home benefits too. All staff work under a collective agreement, so you can always feel secure.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#FAFAFA] rounded-[30px] lg:p-[30px] p-4">
+        <div class="flex md:gap-7 gap-2 items-center">
+          <img
+            src="../build/assets/img/i2.png"
+            alt=""
+            class="md:h-full md:w-[30%] h-20 w-20"
+          />
+          <div class="">
+            <p
+              class="text-[#060924] trenda_bold lg:text-2xl md:text-lg text-base"
+            >
+            Satisfaction Guarantee
+            </p>
+            <p
+              class="text-[#7D8C95] lg:text-lg text-xs xl:leading-9 leading-4 sofia_regular"
+            >
+            Our cleaning pros deliver great service, but if you're not happy, our quality guarantee has you covered. We take full responsibility.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#FAFAFA] rounded-[30px] lg:p-[30px] p-4">
+        <div class="flex md:gap-7 gap-2 items-center">
+          <img
+            src="../build/assets/img/i3.png"
+            alt=""
+            class="md:h-full md:w-[30%] h-20 w-20"
+          />
+          <div class="">
+            <p
+              class="text-[#060924] trenda_bold lg:text-2xl md:text-lg text-base"
+            >
+            Background Checks
+            </p>
+            <p
+              class="text-[#7D8C95] lg:text-lg text-xs xl:leading-9 leading-4 sofia_regular"
+            >
+            Your security is our priority. We always check the criminal records of our staff for your peace of mind.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#FAFAFA] rounded-[30px] lg:p-[30px] p-4">
+        <div class="flex md:gap-7 gap-2 items-center">
+          <img
+            src="../build/assets/img/i4.png"
+            alt=""
+            class="md:h-full md:w-[30%] h-20 w-20"
+          />
+          <div class="">
+            <p
+              class="text-[#060924] trenda_bold lg:text-2xl md:text-lg text-base"
+            >
+            Liability Insurance
+            </p>
+            <p
+              class="text-[#7D8C95] lg:text-lg text-xs xl:leading-9 leading-4 sofia_regular"
+            >
+            Accidents happen, but our liability insurance ensures you're protected in case of any mishaps.
+            </p>
+          </div>
+        </div>
+      </div>
+
+     
+    </div>
+  </section>
+<!-- ===============Cleaning after new construction and renovation SECTION end HER============== -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- ===============Building site - That's how it works! SECTION end HER============== -->
+  <section class="2xl:px-[80px] p-[5%] bg-[#060924]">
+    <div
+      class="flex justify-center items-center text-center">
+      <div class="md:w-[79%] w-full">
+     
+        <h1
+          class="2xl:text-[60px] xl:text-5xl md:text-3xl text-2xl 2xl:leading-[86px] md:leading-10 leading-8 text-[#FAFAFA] trenda_regular lg:pt-10 pt-2 ">
+          Do you want to get in touch with us?
+        </h1>
+        <p
+        class="text-[#7D8C95] xl:text-[20px] md:text-base text-sm sofia_regular 2xl:leading-10 leading-7 md:pt-5 pt-1">
+        Looking for <span class="text-[#15238C]">Contact information</span> for your city? Or do you want a cost estimate for <span class="text-[#15238C]">home cleaning ?</span>
+      </p>
+      <div class="flex justify-center items-center md:gap-5 gap-2 md:flex-row flex-col">
+        <button
+            class="bg-[#15238C] text-white py-4 md:mt-12 mt-7 rounded-full hover:bg-[#394288] flex items-center text-lg trenda_bold md:w-[45%] w-full text-center justify-center"
+          >
+            Book Cleaning
+          </button>
+          <button
+          class="bg-[#080C31] text-white py-4 md:mt-12 mt-7 rounded-full hover:bg-[#394288] flex items-center text-lg trenda_bold md:w-[45%] w-full text-center justify-center"
+        >
+        Read more about Stadarna
+        </button>
+      </div>
+     
+      </div>
+  
+    </div>
+  </section>
+<!-- ===============Cleaning after new construction and renovation SECTION end HER============== -->
+
+
+
+
+
+
+
+
+
+<section
+class="2xl:px-[100px] px-[5%] 2xl:py-[130px] py-[5%] flex justify-center bg-[#FAFAFA] 2xl:gap-[147px] xl:gap-[100px] gap-5 lg:flex-row flex-col items-baseline">
+
+
+
+
+
+<div class="lg:w-[50%] w-full">
+ 
+  <div class="">
+    <h1 class="trenda_regular 2xl:text-[56px] md:text-2xl xl:text-3xl  text-lg text-[#060924] 2xl:leading-[82px] md:leading-10 leading-7">
+        The cleaners - We are an authorized service company
+    </h1>
+    <p
+      class="text-[#7D8C95] 2xl:text-xl text-sm sofia_regular 2xl:leading-10  xl:leading-7  leading-5 xl:pt-5 pt-1"
+    >
+    We say @*#%!$ to poor working conditions and black money, which the industry has unfortunately historically been characterized by. Therefore, we always work based on Almega Serviceföretagen's regulations together with the other good examples on the market when it comes to service and cleaning at home.
+    </p>
+    <div class="pt-5">
+        <img src="./assets/img/log04.png" alt="">
+    </div>
+  </div>
+  
+  
+
+
+</div>
+
+<div class="lg:w-[50%] w-full">
+ 
+    <div class="">
+      <h1 class="trenda_regular 2xl:text-[56px] md:text-2xl xl:text-3xl  text-lg text-[#060924] 2xl:leading-[82px] md:leading-10 leading-7 ">
+        The hours are credited upon <br class="lg:block hidden">cancellation
+      </h1>
+      <p
+        class="text-[#7D8C95] 2xl:text-xl text-sm sofia_regular 2xl:leading-10  xl:leading-7  leading-5 xl:pt-5 pt-1"
+      >
+      Of course, you have the option of booking a cleaning appointment. If you do it no later than seven days in advance, you will be credited with the canceled hours. You can use these later for an extra cleaning occasion or for a selection of our other services such as window cleaning, major cleaning or help with laundry.
+      </p>
+      <div class="pt-5">
+          <img src="./assets/img/logo5.png" alt="">
+      </div>
+    </div>
+    
+    
+  
+  
+  </div>
+
+
+</section>
+
+
+
+
+
+
+
+    <!-- ===============footer section start here============= -->
+    <section class="2xl:px-[100px] pt-[50px] pb-[30px] p-[5%] bg-[#060924]">
+      <div class="flex items-start justify-between gap-11 xl:flex-row flex-col">
+        <div class="xl:w-[30%] md:w-[50%]">
+          <img src="../build/assets/img/Logo.png" alt="" />
+          <img src="../build/assets/img/logo2.png" alt="" class="pt-5" />
+          <p class="pt-2 text-[#7D8C95] sofia_regular text-base leading-7">
+            Städarna Sverige AB is one of Sweden's largest home service
+            companies with established offices from Gävle in the north to Kalmar
+            in the south. With over 800 employees, we help thousands of private
+            and business customers every month.
+          </p>
+
+          <div
+            class="flex items-center list-none pt-[54px] gap-[30px] cursor-pointer"
+          >
+            <a href=""><img src="../build/assets/img/facebook.png" alt="" /></a>
+            <a href=""><img src="../build/assets/img/insta.png" alt="" /></a>
+            <a href=""><img src="../build/assets/img/linkdin.png" alt="" /></a>
+          </div>
+          <div class="mt-[50px]">
+            <a
+              href="./about_us.html"
+              class="text-[#15238C] sofia_regular text-base underline capitalize"
+              >Read More About us
+            </a>
+          </div>
+        </div>
+        <div class="xl:w-[20%] md:w-[50%]">
+          <ul
+            class="sofia_regular 2xl:text-[20px] text-base text-[#FAFAFA] space-y-4"
+          >
+            <li><a href="">My pages </a></li>
+
+            <li><a href="">Common questions and answers </a></li>
+            <li><a href="">Complaints & Damages </a></li>
+            <li><a href="">Press room </a></li>
+            <li><a href="">Service office (HK) </a></li>
+            <li><a href="">Privacy Policy </a></li>
+            <li><a href="">Contact details for your city </a></li>
+            <li><a href="">Employee page </a></li>
+            <li><a href="">General conditions </a></li>
+            <li><a href="">The Dream Fund </a></li>
+            <li><a href="">Whistleblower </a></li>
+          </ul>
+        </div>
+        <div
+          class="xl:w-[50%] grid md:grid-cols-2 grid-cols-1 gap-5 md:w-full w-full"
+        >
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer1.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5">
+              Book home Town
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer2.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Work here
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer1.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Book Company Town
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer4.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Customer Service
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer2.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              Service Office(HK)
+            </p>
+          </a>
+          <a class="bg-[#080C31] rounded-[30px] p-7 flex items-center flex-col">
+            <img src="../build/assets/img/footer6.png" alt="" />
+            <p class="sofia_regular text-[20px] text-[#FAFAFA] pt-5 capitalize">
+              English
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <hr class="w-full text-[#7D8C95] mt-8 mb-4" />
+        <div class="text-center">
+          <p class="sofia_regular text-[20px] text-[#7D8C95]">
+            © Copyright 2024 Stædarna all rights reserved
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ===============footer section end here============= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <script>
+      // Select all FAQ toggle buttons
+      const faqToggles = document.querySelectorAll(".faq-toggle");
+
+      faqToggles.forEach((toggle) => {
+        toggle.addEventListener("click", () => {
+          // Get the content and icon related to the clicked toggle
+          const faqContent = toggle.nextElementSibling;
+          const faqIcon = toggle.querySelector(".faq-icon");
+
+          // Toggle the max-height for smooth expansion and collapse
+          if (faqContent.style.maxHeight) {
+            faqContent.style.maxHeight = null; // Close it
+          } else {
+            faqContent.style.maxHeight = faqContent.scrollHeight + "px"; // Open it
+          }
+
+          // Rotate icon
+          faqIcon.classList.toggle("rotate-180");
+        });
+      });
+    </script>
+    <script>
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
